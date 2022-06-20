@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --base: #FFF;
+  --primary: #2A254B;
+  --blue-primary: #4E4D93;
+  --blue-gray: #EBE8F4;
+  --dark-blue-gray: #CAC6DA;
+  --light-gray: #F9F9F9;
+  --fonts-primary: #22202E;
+  --fonts-secondary: #726E8D;
+  --fonts-tertiary: #5B5676;
+  ;
+}
+
+body {
+  color: var(--fonts-primary);
+  font-family: 'Montserrat', sans-serif;
+}
+
+ul,ol {
+  list-style: none;
+}
