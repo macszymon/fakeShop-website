@@ -27,13 +27,15 @@ function Nav() {
           <li className="nav__item"><a href='#'>All</a></li>
           <li className="nav__item"><a href='#'>Men</a></li>
           <li className="nav__item"><a href='#'>Women</a></li>
+          <li className="nav__item"><a href='#'>Summer Collection</a></li>
         </ul>
       </div>
       {isOpen && <div className="nav__categories-mobile">
-        <ul className='nav__list'>
-          <li className="nav__item"><a href='#'>All</a></li>
-          <li className="nav__item"><a href='#'>Men</a></li>
-          <li className="nav__item"><a href='#'>Women</a></li>
+        <ul className='nav__list-mobile'>
+          <li className="nav__item-mobile"><a href='#'>All</a></li>
+          <li className="nav__item-mobile"><a href='#'>Men</a></li>
+          <li className="nav__item-mobile"><a href='#'>Women</a></li>
+          <li className="nav__item-mobile"><a href='#'>New Collection</a></li>
         </ul>
       </div>}
     </nav>

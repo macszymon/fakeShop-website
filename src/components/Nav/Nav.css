@@ -60,9 +60,24 @@
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   display: none;
   margin-inline: auto;
-  max-width: 1500px;
   padding-top: 1.25em;
   margin-top: 1.4rem;
+}
+
+.nav__list-mobile {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.nav__item-mobile a {
+  color: var(--fonts-secondary);
+  text-decoration: none;
+  transition: color .2s ease-in-out;
+}
+
+.nav__item-mobile a:hover {
+  color: var(--fonts-primary);
 }
 
 .nav__list {
