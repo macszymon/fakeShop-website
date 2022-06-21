@@ -4,7 +4,7 @@ import {IoIosSearch} from 'react-icons/io'
 import {BsCart3} from 'react-icons/bs'
 import {VscAccount} from 'react-icons/vsc'
 import {AiOutlineMenu} from 'react-icons/ai'
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false)
@@ -25,18 +25,20 @@ function Nav() {
       </div>
       <div className="nav__categories">
         <ul className='nav__list'>
-          <li className="nav__item"><Link to='/products/all'>All</Link></li>
-          <li className="nav__item"><Link to='/products/men'>Men</Link></li>
-          <li className="nav__item"><Link to='/products/women'>Women</Link></li>
-          <li className="nav__item"><Link to='/products/collection'>New Collection</Link></li>
+          <li className="nav__item"><NavLink to='/'>Home</NavLink></li>
+          <li className="nav__item"><NavLink to='/products/men'>Men</NavLink></li>
+          <li className="nav__item"><NavLink to='/products/women'>Women</NavLink></li>
+          <li className="nav__item"><NavLink to='/products/collection'>Collection</NavLink></li>
+          <li className="nav__item"><NavLink to='/blog'>Blog</NavLink></li>
         </ul>
       </div>
       {isOpen && <div className="nav__categories-mobile">
         <ul className='nav__list-mobile'>
-          <li className="nav__item-mobile"><Link to='/products/all'>All</Link></li>
-          <li className="nav__item-mobile"><Link to='/products/men'>Men</Link></li>
-          <li className="nav__item-mobile"><Link to='/products/women'>Women</Link></li>
-          <li className="nav__item-mobile"><Link to='/products/collection'>New Collection</Link></li>
+          <li className="nav__item-mobile"><NavLink to='/'>Home</NavLink></li>
+          <li className="nav__item-mobile"><NavLink to='/products/men'>Men</NavLink></li>
+          <li className="nav__item-mobile"><NavLink to='/products/women'>Women</NavLink></li>
+          <li className="nav__item-mobile"><NavLink to='/products/collection'>Collection</NavLink></li>
+          <li className="nav__item-mobile"><NavLink to='/blog'>Blog</NavLink></li>
         </ul>
       </div>}
     </nav>

@@ -3,9 +3,7 @@
 }
 
 .products__header {
-  background-image: url('../images/bernd-dittrich-ZrdVsartezo-unsplash.jpg');
-  background-position: center;
-  background-size: cover;
+  background-color: var(--primary);
   padding: 7.6em 5em 2em 5em;
 }
 

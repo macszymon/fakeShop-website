@@ -1,6 +1,6 @@
 import React from 'react'
 import './Hero.css'
-import img2 from '../../images/emma-harrisova-QegmyFbXvTw-unsplash.jpg'
+import img2 from '../../images/emma-harrisova-QegmyFbXvTw-unsplash.png'
 import { Link } from "react-router-dom";
 
 function Hero() {

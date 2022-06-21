@@ -1,10 +1,16 @@
 .card {
-  width: 100%;
+  cursor: pointer;
   margin: auto;
+  transition: all .3s ease-in-out;
+  width: 100%;
+}
+
+.card:hover {
+  transform: translateY(-10px);
 }
 
 .card__img {
-  height: 26rem;
+  height: 415px;
   object-fit: cover;
   object-position: top;
   margin-bottom: 1.5rem;
@@ -50,6 +56,6 @@
 
 @media (max-width: 350px) {
   .card__img {
-    height: 22rem;
+    height: 350px;
   } 
 }

@@ -1,10 +1,10 @@
 import React from 'react'
 import './AboutUs.css'
-import img from '../../images/clark-street-mercantile-P3pI6xzovu0-unsplash.jpg'
+import img from '../../images/clark-street-mercantile-P3pI6xzovu0-unsplash.png'
 
 function AboutUs() {
   return (
-    <section className="about-us">
+    <section id='about-us' className="about-us">
       <div className="about-us__text">
         <h2 className='about-us__header'>About Us</h2>
         <p className='about-us__desc'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, error perspiciatis aspernatur quae explicabo eligendi atque. Corrupti a reiciendis distinctio debitis ut.</p>

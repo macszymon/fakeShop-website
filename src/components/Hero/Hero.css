@@ -1,14 +1,14 @@
 .hero {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: calc(100vh - 8.5625rem);
   position: relative;
   margin-top: 8.5625rem;
   z-index: 1;
-  height: calc(100vh - 8.5625rem);
 }
 
 .hero__img {
-  height: calc(100vh - 8.5625rem);
+  height: 100%;
   object-fit: cover;
   width: 100%;
 }
@@ -87,9 +87,8 @@
 
 @media (max-width: 650px) {
   .hero {
-    height: 800px;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows:   repeat(2, 400px);
   }
 
   .hero__img {

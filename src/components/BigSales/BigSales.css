@@ -1,0 +1,74 @@
+.sales {
+  align-items: center;
+  background-image: url('../../images/taylor-brandon-_LaExtFs-oo-unsplash.png');
+  background-size: cover;
+  background-position: center;
+  color: var(--base);
+  display: flex;
+  flex-direction: column;
+  height: 650px;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.sales::after {
+  background-color: rgba(0, 0, 0, 0.264);
+  content: '';
+  height: 100%;
+  inset: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+
+.sales__title {
+  font-size: 4rem;
+  font-weight: 400;
+  position: relative;
+  z-index: 11;
+}
+
+.sales__festival {
+  font-size: 3rem;
+  font-weight: 400;
+  position: relative;
+  z-index: 11;
+}
+
+.sales__off {
+  font-size: 6rem;
+  font-weight: 400;
+  position: relative;
+  z-index: 11;
+}
+
+.sales__off span {
+  font-size: 3rem;
+}
+
+@media (max-width: 650px) {
+  .sales {
+    height: 350px;
+  }
+
+
+  .sales__title {
+    font-size: 2.5rem;
+
+  }
+  
+  .sales__festival {
+    font-size: 1.5rem;
+
+  }
+  
+  .sales__off {
+    font-size: 3rem;
+
+  }
+  
+  .sales__off span {
+    font-size: 1.5rem;
+  }
+}

@@ -1,8 +1,22 @@
 .footer {
-  background-color: var(--fonts-primary);
+  background-color: var(--primary);
+  padding: 3.6em 6em;
+}
+
+.footer__flex {
   display: flex;
   justify-content: space-between;
-  padding: 3.6em 6em;
+  margin-bottom: 3rem;
+  margin-inline: auto;
+  max-width: 1500px;
+}
+
+.footer__copy {
+  border-top: 1px solid var(--dark-blue-gray);
+  color: var(--base);
+  margin-inline: auto;
+  max-width: 1500px;
+  padding-top: 1.5rem;
 }
 
 .footer__logo {
@@ -47,10 +61,13 @@
 
 @media (max-width: 650px) {
   .footer {
+    padding: 3em 1em;
+  }
+
+  .footer__flex {
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
-    padding: 3em 1em;
     text-align: center;
   }
 
