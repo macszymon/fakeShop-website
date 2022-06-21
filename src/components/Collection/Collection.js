@@ -6,8 +6,8 @@ function Collection() {
   return (
     <section className="collection">
       <div className="collection__header">
-      <h2 className='collection__title'>Summer collection</h2>
-      <button className='collection__btn'>View collection</button>
+      <h2 className='collection__title'>Featured from new collection</h2>
+      <button className='collection__btn'>See full collection</button>
       </div>
       <div className="collection__cards">
         <Card index={3}/>

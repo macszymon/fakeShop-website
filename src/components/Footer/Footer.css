@@ -38,3 +38,27 @@
 .footer__list--socials .footer__item:hover {
   transform: scale(1.2);
 }
+
+@media (max-width: 950px) {
+  .footer {
+    padding: 3em 1.5em;
+  }
+}
+
+@media (max-width: 650px) {
+  .footer {
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3em 1em;
+    text-align: center;
+  }
+
+  .footer__logo {
+    margin-bottom: 1.5rem;
+  }
+
+  .footer__item:last-child {
+    margin-bottom: 1.5rem;
+  }
+}

@@ -27,7 +27,7 @@ function Nav() {
           <li className="nav__item"><a href='#'>All</a></li>
           <li className="nav__item"><a href='#'>Men</a></li>
           <li className="nav__item"><a href='#'>Women</a></li>
-          <li className="nav__item"><a href='#'>Summer Collection</a></li>
+          <li className="nav__item"><a href='#'>New Collection</a></li>
         </ul>
       </div>
       {isOpen && <div className="nav__categories-mobile">

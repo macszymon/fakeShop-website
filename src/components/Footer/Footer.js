@@ -11,13 +11,13 @@ function Footer() {
         <li className="footer__item"><a href="#">All</a></li>
         <li className="footer__item"><a href="#">Men</a></li>
         <li className="footer__item"><a href="#">Women</a></li>
-        <li className="footer__item"><a href="#">Summer collection</a></li>
+        <li className="footer__item"><a href="#">New collection</a></li>
       </ul>
       <ul className="footer__list">
         <li className="footer__item">Company</li>
         <li className="footer__item"><a href="#">About us</a></li>
         <li className="footer__item"><a href="#">Contact us</a></li>
-        <li className="footer__item"><a href="#">Privacy</a></li>
+        <li className="footer__item"><a href="#">Privacy policy</a></li>
         <li className="footer__item"><a href="#">Return policy</a></li>
       </ul>
       <ul className="footer__list ">
