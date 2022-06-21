@@ -58,4 +58,18 @@
   .products__cards {
     grid-template-columns: repeat(auto-fill, 205px);
   } 
+
+}
+
+@media (max-width: 450px) {
+  .products__filters {
+    padding: 1.5rem;
+    justify-content: center;
+  }
+  
+  .products__btn {
+    background-color: var(--light-gray);
+    font-size: .7rem;
+    gap: .2rem;
+  }
 }

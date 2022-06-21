@@ -8,29 +8,35 @@ const data = [
     rate: 4.3,
     reviews: 23 ,
     price: 17,
-    isFromNewCollection: false
+    isFromNewCollection: false,
+    sizes: ['S', 'M', 'L'],
+    fabric: ['cotton', 'polyester']
   },
   {
     id: 2,
-    name: 'Black pulover',
+    name: 'Black pullover',
     category: 'men',
     type: 'top',
     img: 'https://images.unsplash.com/photo-1578681994506-b8f463449011?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80',
     rate: 4.6,
     reviews: 73,
     price: 30,
-    isFromNewCollection: false
+    isFromNewCollection: false,
+    sizes: ['S', 'M', 'L'],
+    fabric: ['cotton', 'polyester']
   },
   {
     id: 3,
     name: 'Premium Coat',
     category: 'men',
-    type: 'top',
+    type: 'full-body',
     img: 'https://images.unsplash.com/photo-1622866651408-f373152f173b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
     rate: 4.5,
     reviews: 13,
     price: 43,
-    isFromNewCollection: false
+    isFromNewCollection: false,
+    sizes: ['S', 'M', 'L'],
+    fabric: ['cotton', 'polyester']
   },
   {
     id: 4,
@@ -41,29 +47,35 @@ const data = [
     rate: 4.3,
     reviews: 56,
     price: 20,
-    isFromNewCollection: true
+    isFromNewCollection: true,
+    sizes: ['S', 'M', 'L'],
+    fabric: ['cotton', 'polyester']
   },
   {
     id: 5,
     name: 'Red Dress',
     category: 'women',
-    type: 'dress',
+    type: 'full-body',
     img: 'https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=446&q=80',
     rate: 4.7,
     reviews: 89,
     price: 74,
-    isFromNewCollection: true
+    isFromNewCollection: true,
+    sizes: ['S', 'M', 'L'],
+    fabric: ['cotton', 'polyester']
   },
   {
     id: 6,
-    name: 'Premium Pulover',
+    name: 'Premium Pullover',
     category: 'men',
     type: 'top',
     img: 'https://images.unsplash.com/photo-1582377865071-6e622dc74d8c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
     rate: 4.6,
     reviews: 94,
     price: 60,
-    isFromNewCollection: false
+    isFromNewCollection: false,
+    sizes: ['S', 'M', 'L'],
+    fabric: ['cotton', 'polyester']
   },
   {
     id: 7,
@@ -74,7 +86,9 @@ const data = [
     rate: 4.9,
     reviews: 134,
     price: 55,
-    isFromNewCollection: false
+    isFromNewCollection: false,
+    sizes: ['39', '40', '41', '42', '43'],
+    fabric: ['leather', 'polyester', 'rubber']
   },
   {
     id: 8,
@@ -85,7 +99,9 @@ const data = [
     rate: 4.2,
     reviews: 15,
     price: 89,
-    isFromNewCollection: false
+    isFromNewCollection: false,
+    sizes: ['39', '40', '41', '42', '43'],
+    fabric: ['leather', 'polyester', 'rubber']
   },
   {
     id: 9,
@@ -96,7 +112,9 @@ const data = [
     rate: 5,
     reviews: 1,
     price: 120,
-    isFromNewCollection: false
+    isFromNewCollection: false,
+    sizes: ['39', '40', '41', '42', '43'],
+    fabric: ['leather', 'polyester', 'rubber']
   },
   {
     id: 10,
@@ -107,10 +125,12 @@ const data = [
     rate: 3.9,
     reviews: 250,
     price: 43,
-    isFromNewCollection: true
+    isFromNewCollection: true,
+    sizes: ['39', '40', '41', '42', '43'],
+    fabric: ['leather', 'polyester', 'rubber']
   },
   {
-    id: 10,
+    id: 11,
     name: 'DIY Cap',
     category: 'men',
     type: 'accessories',
@@ -118,18 +138,61 @@ const data = [
     rate: 4.5,
     reviews: 25,
     price: 20,
-    isFromNewCollection: true
+    isFromNewCollection: true,
+    sizes: ['S', 'M', 'L'],
+    fabric: ['cotton', 'polyester']
   },
   {
-    id: 11,
-    name: 'Yellow shorts',
+    id: 12,
+    name: 'Yellow Shorts',
     category: 'men',
     type: 'bottom',
     img: 'https://images.unsplash.com/photo-1617952385804-1da4f8d71ba9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80',
     rate: 4.9,
     reviews: 13,
     price: 45,
-    isFromNewCollection: true
+    isFromNewCollection: true,
+    sizes: ['S', 'M', 'L'],
+    fabric: ['cotton', 'polyester']
+  },
+  {
+    id: 13,
+    name: 'Light Dress',
+    category: 'women',
+    type: 'full-body',
+    img: 'https://images.unsplash.com/photo-1574655563118-3e3eab32015d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
+    rate: 4.5,
+    reviews: 67,
+    price: 70,
+    isFromNewCollection: false,
+    sizes: ['S', 'M', 'L'],
+    fabric: ['cotton', 'polyester']
+  },
+  {
+    id: 14,
+    name: 'Dark Suit',
+    category: 'women',
+    type: 'full-body',
+    img: 'https://images.unsplash.com/photo-1654512697681-8434b50096dd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80',
+    rate: 4.9,
+    reviews: 3,
+    price: 99,
+    isFromNewCollection: false,
+    sizes: ['S', 'M', 'L'],
+    fabric: ['cotton', 'polyester']
+  },
+  {
+    id: 15,
+    name: 'Warm Pullover',
+    category: 'women',
+    type: 'top',
+    img: 'https://images.unsplash.com/photo-1644424235013-8865330d965f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
+    rate: 4.1,
+    reviews: 331,
+    price: 51,
+    isFromNewCollection: false,
+    sizes: ['S', 'M', 'L'],
+    fabric: ['cotton', 'polyester']
   },
 ]
 

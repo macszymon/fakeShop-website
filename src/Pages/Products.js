@@ -27,7 +27,7 @@ function Products() {
         <button className="products__btn">Price <MdArrowDropDown size={20}/></button>
       </div>
       <div className="products__cards">
-      {filteredData.map(item => <Card item={item} />)}
+      {filteredData.map(item => <Card key={item.id} item={item} />)}
       </div>
     </main>
   );

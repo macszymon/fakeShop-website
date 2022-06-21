@@ -16,7 +16,7 @@ function Card({item}) {
         </h3>
         <h4 className="card__price">{item.price}$</h4>
       </div>
-      <button className="card__add">Add to cart</button>
+
     </div>
   )
 }
