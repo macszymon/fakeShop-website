@@ -1,17 +1,18 @@
 import React from 'react'
 import './Footer.css'
 import {BsFacebook,BsPinterest, BsTwitter, BsInstagram} from 'react-icons/bs'
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
     <footer className="footer">
-      <span className='footer__logo'>fakeShop</span>
+      <Link to='/' className='footer__logo'>fakeShop</Link>
       <ul className="footer__list">
         <li className="footer__item">Categories</li>
-        <li className="footer__item"><a href="#">All</a></li>
-        <li className="footer__item"><a href="#">Men</a></li>
-        <li className="footer__item"><a href="#">Women</a></li>
-        <li className="footer__item"><a href="#">New collection</a></li>
+        <li className="footer__item"><Link to='/products/all'>All</Link></li>
+          <li className="footer__item"><Link to='/products/men'>Men</Link></li>
+          <li className="footer__item"><Link to='/products/women'>Women</Link></li>
+          <li className="footer__item"><Link to='/products/collection'>New Collection</Link></li>
       </ul>
       <ul className="footer__list">
         <li className="footer__item">Company</li>

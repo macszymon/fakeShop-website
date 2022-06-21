@@ -4,6 +4,7 @@ import {IoIosSearch} from 'react-icons/io'
 import {BsCart3} from 'react-icons/bs'
 import {VscAccount} from 'react-icons/vsc'
 import {AiOutlineMenu} from 'react-icons/ai'
+import { Link } from "react-router-dom";
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false)
@@ -15,7 +16,7 @@ function Nav() {
           <IoIosSearch size={20}/>
           <input className='nav__input' type="text" />
         </form>
-        <span className='nav__logo'>fakeShop</span>
+        <Link to='/' className='nav__logo'>fakeShop</Link>
         <div className="nav__icons">
           <BsCart3 size={20}/>
           <VscAccount size={20}/>
@@ -24,18 +25,18 @@ function Nav() {
       </div>
       <div className="nav__categories">
         <ul className='nav__list'>
-          <li className="nav__item"><a href='#'>All</a></li>
-          <li className="nav__item"><a href='#'>Men</a></li>
-          <li className="nav__item"><a href='#'>Women</a></li>
-          <li className="nav__item"><a href='#'>New Collection</a></li>
+          <li className="nav__item"><Link to='/products/all'>All</Link></li>
+          <li className="nav__item"><Link to='/products/men'>Men</Link></li>
+          <li className="nav__item"><Link to='/products/women'>Women</Link></li>
+          <li className="nav__item"><Link to='/products/collection'>New Collection</Link></li>
         </ul>
       </div>
       {isOpen && <div className="nav__categories-mobile">
         <ul className='nav__list-mobile'>
-          <li className="nav__item-mobile"><a href='#'>All</a></li>
-          <li className="nav__item-mobile"><a href='#'>Men</a></li>
-          <li className="nav__item-mobile"><a href='#'>Women</a></li>
-          <li className="nav__item-mobile"><a href='#'>New Collection</a></li>
+          <li className="nav__item-mobile"><Link to='/products/all'>All</Link></li>
+          <li className="nav__item-mobile"><Link to='/products/men'>Men</Link></li>
+          <li className="nav__item-mobile"><Link to='/products/women'>Women</Link></li>
+          <li className="nav__item-mobile"><Link to='/products/collection'>New Collection</Link></li>
         </ul>
       </div>}
     </nav>

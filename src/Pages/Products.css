@@ -1,0 +1,61 @@
+.products {
+  margin-top: 8.5625rem;
+}
+
+.products__header {
+  background-image: url('../images/bernd-dittrich-ZrdVsartezo-unsplash.jpg');
+  background-position: center;
+  background-size: cover;
+  padding: 7.6em 5em 2em 5em;
+}
+
+.products__header h1 {
+  color: var(--base);
+  font-size: 2.25rem;
+  font-weight: 400;
+}
+
+.products__filters {
+  display: flex;
+  padding: .5em 1.5em;
+  gap: .8rem;
+}
+
+.products__btn {
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  font-size: 1rem;
+  gap: .4rem;
+  padding: 1em 1.5em;
+}
+
+.products__cards {
+  display: grid;
+  gap: 1.1rem;
+  grid-template-columns: repeat(auto-fill, 305px);
+  justify-content: center;
+  padding: 1.8em 5em;
+}
+
+@media (max-width: 950px) {
+  .products {
+    margin-top: 8rem;
+  }
+
+  .products__header {
+    padding: 5em 1em 2em 1em;
+    text-align: center;
+  }
+
+  .products__header h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .products__cards {
+    grid-template-columns: repeat(auto-fill, 205px);
+  } 
+}
