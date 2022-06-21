@@ -41,6 +41,11 @@ ul,ol {
   list-style: none;
 }
 
+a {
+  color: var(--base);
+  text-decoration: none;
+}
+
 @keyframes pageLoad {
   0% {
     height: 100vh;

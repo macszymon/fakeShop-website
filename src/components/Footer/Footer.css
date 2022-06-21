@@ -1,0 +1,40 @@
+.footer {
+  background-color: var(--fonts-primary);
+  display: flex;
+  justify-content: space-between;
+  padding: 3.6em 6em;
+}
+
+.footer__logo {
+  color: var(--base);
+  justify-self: center;
+  font-size: 1.5rem;
+}
+
+.footer__list {
+  color: var(--base);
+}
+
+.footer__item:first-child {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.footer__item {
+  font-size: .9rem;
+  margin-bottom: .5rem;
+  transition: all .2s ease-in-out;
+}
+
+.footer__item a:hover {
+  text-decoration: underline;
+}
+
+.footer__list--socials {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer__list--socials .footer__item:hover {
+  transform: scale(1.2);
+}

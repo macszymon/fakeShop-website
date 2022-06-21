@@ -10,7 +10,7 @@ function Hero() {
         <h1 className='hero__header'>Clothes for people who love quality and premium products</h1>
         <h2 className='hero__discount'>30%-40% <span>off</span></h2>
         <h2 className='hero__subheader'>Shop the new Summer colection</h2>
-        <button className="hero__btn">View colection</button>
+        <button className="hero__btn">View collection</button>
       </div>
     </section>
   )

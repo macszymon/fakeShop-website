@@ -1,6 +1,10 @@
 .about-us {
   display: grid;
+  gap: 1rem;
   grid-template-columns: 1fr 1fr;
+  margin-inline: auto;
+  max-width: 1500px;
+  padding: 0 5em 5em 5em;
 }
 
 .about-us__img {
@@ -40,8 +44,24 @@
   transform: scale(1.1);
 }
 
+@media (max-width: 950px) {
+  .about-us {
+    padding: 3em 1.5em;
+  }
+}
+
 @media (max-width: 650px) {
   .about-us {
+    grid-template-rows: 300px 300px;
     grid-template-columns: 1fr;
+  }
+
+  .about-us__text {
+    padding: 1em;
+  }
+
+  .about-us__desc {
+    font-size: .8rem;
+    margin-bottom: 2rem;
   }
 }

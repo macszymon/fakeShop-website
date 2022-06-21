@@ -10,10 +10,10 @@ function Features() {
     <section className="features">
       <h2 className='features__header'>Customer on the first place</h2>
       <div className="features__cards">
-      <FeaturesCard icon={<BsTruck className='card__icon' size={24}/>} title='fast delivery'/>
-      <FeaturesCard icon={<VscPackage className='card__icon' size={24}/>} title='easy return'/>
-      <FeaturesCard icon={<BsCheck2Circle className='card__icon' size={24}/>} title='quality products'/>
-      <FeaturesCard icon={<TbSeeding className='card__icon' size={24}/>} title='recycled packaging'/>
+      <FeaturesCard icon={<BsTruck className='features-card__icon' size={24}/>} title='fast delivery'/>
+      <FeaturesCard icon={<VscPackage className='features-card__icon' size={24}/>} title='easy return'/>
+      <FeaturesCard icon={<BsCheck2Circle className='features-card__icon' size={24}/>} title='quality products'/>
+      <FeaturesCard icon={<TbSeeding className='features-card__icon' size={24}/>} title='recycled packaging'/>
       </div>
     </section>
   )

@@ -4,7 +4,7 @@ const data = [
     name: 'Basic T-shirt',
     category: 'men',
     type: 'top',
-    img: 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80',
+    img: 'https://images.unsplash.com/photo-1622445275463-afa2ab738c34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
     rate: 4.3,
     reviews: 23 ,
     price: 17
@@ -24,7 +24,7 @@ const data = [
     name: 'Premium Coat',
     category: 'men',
     type: 'top',
-    img: 'https://images.unsplash.com/photo-1619603364904-c0498317e145?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
+    img: 'https://images.unsplash.com/photo-1622866651408-f373152f173b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
     rate: 4.5,
     reviews: 13,
     price: 43

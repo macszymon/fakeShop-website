@@ -1,5 +1,7 @@
 .features {
-  padding: 5rem;
+  margin-inline: auto;
+  max-width: 1500px;
+  padding: 5em;
 }
 
 .features__header {
@@ -17,23 +19,23 @@
   justify-content: center;
 }
 
-.card {
+.features-card {
   background-color: var(--light-gray);
   padding: 3rem;
 }
 
-.card__icon {
+.features-card__icon {
   margin-bottom: .75rem;
 }
 
-.card__title {
+.features-card__title {
   font-size: 1.25rem;
   font-weight: 400;
   margin-bottom: .75rem;
   text-transform: capitalize;
 }
 
-.card__desc {
+.features-card__desc {
   font-weight: 400;
   font-size: 1rem;
   line-height: 150%;

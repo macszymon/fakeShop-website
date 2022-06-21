@@ -93,7 +93,8 @@
 }
 
 .nav__item a:hover {
-  color: var(--fonts-primary);
+  color: var(--primary);
+  text-decoration: underline;
 }
 
 .nav__hamburger {
