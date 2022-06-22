@@ -12,6 +12,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="products/:category" element={<Products />} />
+        <Route path="products/men/:category" element={<Products />} />
+        <Route path="products/women/:category" element={<Products />} />
+        <Route path="products/sale/:category" element={<Products />} />
+        <Route path="products/collection/:category" element={<Products />} />
       </Routes>
       <Footer/>
     </>

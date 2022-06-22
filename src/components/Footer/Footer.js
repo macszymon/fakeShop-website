@@ -18,13 +18,16 @@ function Footer() {
         <ul className='footer__list'>
           <li className='footer__item'>Categories</li>
           <li className='footer__item'>
+            <Link to='/products/men'>Sale</Link>
+          </li>
+          <li className='footer__item'>
             <Link to='/products/men'>Men</Link>
           </li>
           <li className='footer__item'>
             <Link to='/products/women'>Women</Link>
           </li>
           <li className='footer__item'>
-            <Link to='/products/collection'>New Collection</Link>
+            <Link to='/products/collection'>New collection</Link>
           </li>
         </ul>
         <ul className='footer__list'>
@@ -62,18 +65,17 @@ function Footer() {
               </a>
             </li>
             <li className='footer__item'>
-              <a
-                href='https://pinterest.com
-'
-                target='_blank'
-              >
+              <a href='https://pinterest.com' target='_blank'>
                 <BsPinterest size={24} />
               </a>
             </li>
           </ul>
         </ul>
       </div>
-      <div className='footer__copy'>fakeShop &copy; 2022</div>
+      <div className='footer__copy'>
+        <p>&copy; fakeShop 2022</p>
+        <p>Made by Szymon Makiewicz all rights reserved</p>
+      </div>
     </footer>
   );
 }

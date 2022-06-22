@@ -1,7 +1,7 @@
 .nav {
   background-color: var(--base);
   left: 0;
-  padding: 1.4em;
+  padding: 1.4em 1.4em 0 1.4em;
   position: fixed;
   right: 0;
   top: 0;
@@ -59,16 +59,24 @@
 .nav__categories-mobile {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   display: none;
+  font-size: 1.2rem;
   margin-inline: auto;
-  padding-top: 1.25em;
-  margin-top: 1.4rem;
+  padding-block: 1.25em;
 }
 
-.nav__list-mobile {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  flex-wrap: wrap;
+.nav__item-mobile {
+  color: var(--fonts-secondary);
+  cursor: pointer;
+  overflow: hidden;
+  height: 26px;
+}
+
+.nav__item-mobile.mobile-open {
+  height: 100%;
+}
+
+.nav__item-mobile:not(:last-child) {
+  margin-bottom: 1rem;
 }
 
 .nav__item-mobile a {
@@ -77,8 +85,24 @@
   transition: color .2s ease-in-out;
 }
 
-.nav__item-mobile a:hover {
-  color: var(--fonts-primary);
+.nav__item-more-mobile {
+  padding: .5em 1em;
+}
+
+.nav__item-more-mobile li {
+  font-size: 1rem;
+}
+
+.nav__item-more-mobile li:not(:last-child) {
+  margin-bottom: .7rem;
+}
+
+.nav__item-mobile.more-mobile  svg {
+  transform: rotate(180deg);
+}
+
+svg.more-mobile and .nav__item-more-mobile {
+  display: block;
 }
 
 .nav__item a.active, .nav__item-mobile a.active {
@@ -92,6 +116,29 @@
   justify-content: center;
 }
 
+.nav__item {
+  padding-bottom: 1.4em;
+  position: relative;
+}
+
+.nav__item-more {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  top: 100%;
+  width: 300px;
+  background-color: var(--base);
+  display: none;
+  padding: 1em;
+  position: absolute;
+}
+
+.nav__item-more li {
+  margin-bottom: 1rem;
+}
+
+.nav__item:hover .nav__item-more {
+  display: block;
+}
+
 .nav__item a {
   color: var(--fonts-secondary);
   text-decoration: none;
@@ -100,13 +147,13 @@
 }
 
 .nav__item a::after {
-  background-color: currentColor;
+  background-color: var(--primary);
   content: '';
   position: absolute;
   bottom: 0;
   left: 0;
   width: 0%;
-  height: 2px;
+  height: 1px;
   transition: all .3s ease-in-out;
 }
 
@@ -123,13 +170,17 @@
 }
 
 @media (max-width: 650px) {
+  .nav {
+    position: unset;
+  }
+
 
   .nav__main {
     border-bottom: none;
     grid-template-columns: 1fr 1fr;
     grid-row: 1fr 1fr;
     justify-content: space-between;
-    padding-bottom: 0;
+    padding-bottom: 1.5em;
   }
 
   .nav__categories {

@@ -8,7 +8,7 @@ function BestSelling() {
   return (
     <section className="best-selling">
       <div className="best-selling__header">
-      <h2 className='best-selling__title'>Best selling</h2>
+      <h2 className='best-selling__title'>Bestsellers</h2>
       </div>
       <div className="collection__cards">
         <Card item={data[1]} />

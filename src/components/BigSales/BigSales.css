@@ -39,12 +39,26 @@
 .sales__off {
   font-size: 6rem;
   font-weight: 400;
+  margin-bottom: 1.5rem;
   position: relative;
   z-index: 11;
 }
 
 .sales__off span {
   font-size: 3rem;
+}
+
+.sales__btn {
+  background-color: var(--base);
+  border: none;
+  color: var(--primary);
+  padding: 1em 2em;
+  transition: all .3s ease-in-out;
+  z-index: 11;
+}
+.sales__btn:hover {
+  opacity: .9;
+  transform: scale(1.1);
 }
 
 @media (max-width: 650px) {
@@ -70,5 +84,9 @@
   
   .sales__off span {
     font-size: 1.5rem;
+  }
+
+  .sales__btn {
+    font-size: .8rem;
   }
 }
