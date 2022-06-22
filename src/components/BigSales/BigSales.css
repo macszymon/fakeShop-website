@@ -3,7 +3,7 @@
   background-image: url('../../images/taylor-brandon-_LaExtFs-oo-unsplash.png');
   background-size: cover;
   background-position: center;
-  color: var(--base);
+  color: var(--fonts-secondary);
   display: flex;
   flex-direction: column;
   height: 650px;
@@ -51,7 +51,7 @@
 .sales__btn {
   background-color: var(--base);
   border: none;
-  color: var(--primary);
+  color: var(--fonts-primary);
   padding: 1em 2em;
   transition: all .3s ease-in-out;
   z-index: 11;

@@ -15,7 +15,7 @@
 
 .hero__text {
   align-items:flex-start;
-  background-color: var(--light-gray);
+  background-color: var(--primary);
   padding: 5em;
   display: flex;
   flex-direction: column;
@@ -31,7 +31,7 @@
 }
 
 .hero__subheader {
-  color: var(--fonts-tertiary);
+  color: var(--fonts-primary);
   font-size: 1.1rem;
   font-weight: 400;
   margin-bottom: 4rem;
@@ -48,9 +48,9 @@
 }
 
 .hero__btn {
-  background-color: var(--base);
-  border: none;
-  color: var(--primary);
+  background-color: transparent;
+  border: 1px solid var(--fonts-primary);
+  color: var(--fonts-primary);
   padding: 1em 2em;
   transition: all .3s ease-in-out;
   z-index: 10;

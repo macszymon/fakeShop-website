@@ -18,16 +18,16 @@ function Footer() {
         <ul className='footer__list'>
           <li className='footer__item'>Categories</li>
           <li className='footer__item'>
-            <Link to='/products/men'>Sale</Link>
+            <Link to='/products/sale/all'>Sale</Link>
           </li>
           <li className='footer__item'>
-            <Link to='/products/men'>Men</Link>
+            <Link to='/products/men/all'>Men</Link>
           </li>
           <li className='footer__item'>
-            <Link to='/products/women'>Women</Link>
+            <Link to='/products/women/all'>Women</Link>
           </li>
           <li className='footer__item'>
-            <Link to='/products/collection'>New collection</Link>
+            <Link to='/products/collection/all'>New collection</Link>
           </li>
         </ul>
         <ul className='footer__list'>

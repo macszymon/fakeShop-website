@@ -1,13 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Nav.css';
 import { IoIosSearch } from 'react-icons/io';
 import { BsCart3 } from 'react-icons/bs';
 import { VscAccount } from 'react-icons/vsc';
 import { AiOutlineMenu } from 'react-icons/ai';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
+
+  const location = useLocation();
+  useEffect(() => {
+    setIsOpen(false);
+  }, [location]);
 
   return (
     <nav className='nav'>
@@ -35,94 +40,88 @@ function Nav() {
             <Link to='/'>Home</Link>
           </li>
           <li className='nav__item'>
-            <Link to='/'>Sale</Link>
+            <Link to='/products/sale/all'>Sale</Link>
             <ul className='nav__item-more'>
               <li>
-                <a href=''>All</a>
+                <Link to='/products/sale/all'>All</Link>
               </li>
               <li>
-                <a href=''>Men</a>
+                <Link to='/products/sale/men'>Men</Link>
               </li>
               <li>
-                <a href=''>Women</a>
-              </li>
-              </ul>
-          </li>
-          <li className='nav__item'>
-            <Link to='/products/men'>Men</Link>
-            <ul className='nav__item-more'>
-              <li>
-                <a href=''>All</a>
-              </li>
-              <li>
-                <a href=''>Bestsellers</a>
-              </li>
-              <li>
-                <a href=''>New Collection</a>
-              </li>
-              <li>
-                <a href=''>Tops</a>
-              </li>
-              <li>
-                <a href=''>Bottoms</a>
-              </li>
-              <li>
-                <a href=''>Full Body</a>
-              </li>
-              <li>
-                <a href=''>Dresses</a>
-              </li>
-              <li>
-                <a href=''>Shoes</a>
-              </li>
-              <li>
-                <a href=''>Accessories</a>
+                <Link to='/products/sale/women'>Women</Link>
               </li>
             </ul>
           </li>
           <li className='nav__item'>
-            <Link to='/products/women'>Women</Link>
+            <Link to='/products/men/all'>Men</Link>
             <ul className='nav__item-more'>
               <li>
-                <a href=''>All</a>
+                <Link to='/products/men/all'>All</Link>
               </li>
               <li>
-                <a href=''>Bestsellers</a>
+                <Link to='/products/bestsellers/men'>Bestsellers</Link>
               </li>
               <li>
-                <a href=''>New Collection</a>
+                <Link to='/products/collection/men'>New Collection</Link>
               </li>
               <li>
-                <a href=''>Tops</a>
+                <Link to='/products/men/top'>Tops</Link>
               </li>
               <li>
-                <a href=''>Bottoms</a>
+                <Link to='/products/men/bottom'>Bottoms</Link>
               </li>
               <li>
-                <a href=''>Full Body</a>
+                <Link to='/products/men/full-body'>Full Body</Link>
               </li>
               <li>
-                <a href=''>Dresses</a>
+                <Link to='/products/men/shoes'>Shoes</Link>
               </li>
               <li>
-                <a href=''>Shoes</a>
-              </li>
-              <li>
-                <a href=''>Accessories</a>
+                <Link to='/products/men/accessories'>Accessories</Link>
               </li>
             </ul>
           </li>
           <li className='nav__item'>
-            <Link to='/products/collection'>New Collection</Link>
+            <Link to='/products/women/all'>Women</Link>
             <ul className='nav__item-more'>
               <li>
-                <a href=''>All</a>
+                <Link to='/products/women/all'>All</Link>
               </li>
               <li>
-                <a href=''>Men</a>
+                <Link to='/products/bestsellers/women'>Bestsellers</Link>
               </li>
               <li>
-                <a href=''>Women</a>
+                <Link to='/products/collection/women'>New Collection</Link>
+              </li>
+              <li>
+                <Link to='/products/women/top'>Tops</Link>
+              </li>
+              <li>
+                <Link to='/products/women/bottom'>Bottoms</Link>
+              </li>
+              <li>
+                <Link to='/products/women/full-body'>Full Body</Link>
+              </li>
+              <li>
+                <Link to='/products/women/shoes'>Shoes</Link>
+              </li>
+              <li>
+                <Link to='/products/women/accessories'>Accessories</Link>
+              </li>
+            </ul>
+          </li>
+          <li className='nav__item'>
+            <Link to='/products/collection/all'>New Collection</Link>
+            <ul className='nav__item-more'>
+              <li>
+                <Link to='/products/collection/all'>All</Link>
+              </li>
+              <li>
+                <Link to='/products/collection/men'>Men</Link>
+              </li>
+              <li>
+                <Link to='/products/collection/women'>Women</Link>
               </li>
             </ul>
           </li>
@@ -137,97 +136,103 @@ function Nav() {
             <li className='nav__item-mobile'>
               <Link to='/'>Home</Link>
             </li>
-            <li className='nav__item-mobile' onClick={(e) => e.target.classList.toggle('mobile-open')}>
+            <li
+              className='nav__item-mobile'
+              onClick={(e) => e.target.classList.toggle('mobile-open')}
+            >
               Sale
               <ul className='nav__item-more-mobile'>
               <li>
-                <a href=''>All</a>
-              </li>
-              <li>
-                <a href=''>Men</a>
-              </li>
-              <li>
-                <a href=''>Women</a>
-              </li>
+                  <Link to='/products/sale/all'>All</Link>
+                </li>
+                <li>
+                  <Link to='/products/sale/men'>Men</Link>
+                </li>
+                <li>
+                  <Link to='/products/sale/women'>Women</Link>
+                </li>
               </ul>
             </li>
-            <li className='nav__item-mobile' onClick={(e) => e.target.classList.toggle('mobile-open')}>
+            <li
+              className='nav__item-mobile'
+              onClick={(e) => e.target.classList.toggle('mobile-open')}
+            >
               Men
               <ul className='nav__item-more-mobile'>
-              <li>
-                <a href=''>All</a>
-              </li>
-              <li>
-                <a href=''>Bestsellers</a>
-              </li>
-              <li>
-                <a href=''>New Collection</a>
-              </li>
-              <li>
-                <a href=''>Tops</a>
-              </li>
-              <li>
-                <a href=''>Bottoms</a>
-              </li>
-              <li>
-                <a href=''>Full Body</a>
-              </li>
-              <li>
-                <a href=''>Dresses</a>
-              </li>
-              <li>
-                <a href=''>Shoes</a>
-              </li>
-              <li>
-                <a href=''>Accessories</a>
-              </li>
-            </ul>
+                <li>
+                  <Link to='/products/men/all'>All</Link>
+                </li>
+                <li>
+                  <Link to='/products/bestsellers/men'>Bestsellers</Link>
+                </li>
+                <li>
+                  <Link to='/products/collection/men'>New Collection</Link>
+                </li>
+                <li>
+                  <Link to='/products/men/top'>Tops</Link>
+                </li>
+                <li>
+                  <Link to='/products/men/bottom'>Bottoms</Link>
+                </li>
+                <li>
+                  <Link to='/products/men/full-body'>Full Body</Link>
+                </li>
+                <li>
+                  <Link to='/products/men/shoes'>Shoes</Link>
+                </li>
+                <li>
+                  <Link to='/products/men/accessories'>Accessories</Link>
+                </li>
+              </ul>
             </li>
-            <li className='nav__item-mobile' onClick={(e) => e.target.classList.toggle('mobile-open')}>
+            <li
+              className='nav__item-mobile'
+              onClick={(e) => e.target.classList.toggle('mobile-open')}
+            >
               Women
               <ul className='nav__item-more-mobile'>
-              <li>
-                <a href=''>All</a>
-              </li>
-              <li>
-                <a href=''>Bestsellers</a>
-              </li>
-              <li>
-                <a href=''>New Collection</a>
-              </li>
-              <li>
-                <a href=''>Tops</a>
-              </li>
-              <li>
-                <a href=''>Bottoms</a>
-              </li>
-              <li>
-                <a href=''>Full Body</a>
-              </li>
-              <li>
-                <a href=''>Dresses</a>
-              </li>
-              <li>
-                <a href=''>Shoes</a>
-              </li>
-              <li>
-                <a href=''>Accessories</a>
-              </li>
-            </ul>
+                <li>
+                  <Link to='/products/women/all'>All</Link>
+                </li>
+                <li>
+                  <Link to='/products/bestsellers/women'>Bestsellers</Link>
+                </li>
+                <li>
+                  <Link to='/products/collection/women'>New Collection</Link>
+                </li>
+                <li>
+                  <Link to='/products/women/top'>Tops</Link>
+                </li>
+                <li>
+                  <Link to='/products/women/bottom'>Bottoms</Link>
+                </li>
+                <li>
+                  <Link to='/products/women/full-body'>Full Body</Link>
+                </li>
+                <li>
+                  <Link to='/products/women/shoes'>Shoes</Link>
+                </li>
+                <li>
+                  <Link to='/products/women/accessories'>Accessories</Link>
+                </li>
+              </ul>
             </li>
-            <li className='nav__item-mobile' onClick={(e) => e.target.classList.toggle('mobile-open')}>
+            <li
+              className='nav__item-mobile'
+              onClick={(e) => e.target.classList.toggle('mobile-open')}
+            >
               New Collection
               <ul className='nav__item-more-mobile'>
-              <li>
-                <a href=''>All</a>
-              </li>
-              <li>
-                <a href=''>Men</a>
-              </li>
-              <li>
-                <a href=''>Women</a>
-              </li>
-            </ul>
+                <li>
+                  <Link to='/products/collection/all'>All</Link>
+                </li>
+                <li>
+                  <Link to='/products/collection/men'>Men</Link>
+                </li>
+                <li>
+                  <Link to='/products/collection/women'>Women</Link>
+                </li>
+              </ul>
             </li>
             <li className='nav__item-mobile'>
               <Link to='/blog'>Blog</Link>

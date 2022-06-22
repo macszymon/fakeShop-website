@@ -6,11 +6,14 @@ const data = [
     type: 'top',
     img: 'https://images.unsplash.com/photo-1622445275463-afa2ab738c34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
     rate: 4.3,
-    reviews: 23 ,
+    reviews: 23,
     price: 17,
     isFromNewCollection: false,
     sizes: ['S', 'M', 'L'],
-    fabric: ['cotton', 'polyester']
+    fabric: ['cotton', 'polyester'],
+    isOnSale: false,
+    discount: 0,
+    isBestseller: false,
   },
   {
     id: 2,
@@ -23,7 +26,10 @@ const data = [
     price: 30,
     isFromNewCollection: false,
     sizes: ['S', 'M', 'L'],
-    fabric: ['cotton', 'polyester']
+    fabric: ['cotton', 'polyester'],
+    isOnSale: false,
+    discount: 0,
+    isBestseller: false,
   },
   {
     id: 3,
@@ -36,7 +42,10 @@ const data = [
     price: 43,
     isFromNewCollection: false,
     sizes: ['S', 'M', 'L'],
-    fabric: ['cotton', 'polyester']
+    fabric: ['cotton', 'polyester'],
+    isOnSale: false,
+    discount: 0,
+    isBestseller: false,
   },
   {
     id: 4,
@@ -49,7 +58,10 @@ const data = [
     price: 20,
     isFromNewCollection: true,
     sizes: ['S', 'M', 'L'],
-    fabric: ['cotton', 'polyester']
+    fabric: ['cotton', 'polyester'],
+    isOnSale: false,
+    discount: 0,
+    isBestseller: false,
   },
   {
     id: 5,
@@ -62,7 +74,10 @@ const data = [
     price: 74,
     isFromNewCollection: true,
     sizes: ['S', 'M', 'L'],
-    fabric: ['cotton', 'polyester']
+    fabric: ['cotton', 'polyester'],
+    isOnSale: false,
+    discount: 0,
+    isBestseller: false,
   },
   {
     id: 6,
@@ -75,7 +90,10 @@ const data = [
     price: 60,
     isFromNewCollection: false,
     sizes: ['S', 'M', 'L'],
-    fabric: ['cotton', 'polyester']
+    fabric: ['cotton', 'polyester'],
+    isOnSale: false,
+    discount: 0,
+    isBestseller: true,
   },
   {
     id: 7,
@@ -88,7 +106,10 @@ const data = [
     price: 55,
     isFromNewCollection: false,
     sizes: ['39', '40', '41', '42', '43'],
-    fabric: ['leather', 'polyester', 'rubber']
+    fabric: ['leather', 'polyester', 'rubber'],
+    isOnSale: true,
+    discount: 0.6,
+    isBestseller: true,
   },
   {
     id: 8,
@@ -101,7 +122,10 @@ const data = [
     price: 89,
     isFromNewCollection: false,
     sizes: ['39', '40', '41', '42', '43'],
-    fabric: ['leather', 'polyester', 'rubber']
+    fabric: ['leather', 'polyester', 'rubber'],
+    isOnSale: false,
+    discount: 0,
+    isBestseller: false,
   },
   {
     id: 9,
@@ -114,7 +138,10 @@ const data = [
     price: 120,
     isFromNewCollection: false,
     sizes: ['39', '40', '41', '42', '43'],
-    fabric: ['leather', 'polyester', 'rubber']
+    fabric: ['leather', 'polyester', 'rubber'],
+    isOnSale: true,
+    discount: 0.5,
+    isBestseller: false,
   },
   {
     id: 10,
@@ -127,7 +154,10 @@ const data = [
     price: 43,
     isFromNewCollection: true,
     sizes: ['39', '40', '41', '42', '43'],
-    fabric: ['leather', 'polyester', 'rubber']
+    fabric: ['leather', 'polyester', 'rubber'],
+    isOnSale: false,
+    discount: 0.8,
+    isBestseller: false,
   },
   {
     id: 11,
@@ -140,7 +170,10 @@ const data = [
     price: 20,
     isFromNewCollection: true,
     sizes: ['S', 'M', 'L'],
-    fabric: ['cotton', 'polyester']
+    fabric: ['cotton', 'polyester'],
+    isOnSale: false,
+    discount: 0.7,
+    isBestseller: false,
   },
   {
     id: 12,
@@ -153,7 +186,10 @@ const data = [
     price: 45,
     isFromNewCollection: true,
     sizes: ['S', 'M', 'L'],
-    fabric: ['cotton', 'polyester']
+    fabric: ['cotton', 'polyester'],
+    isOnSale: false,
+    discount: 0,
+    isBestseller: false,
   },
   {
     id: 13,
@@ -166,7 +202,10 @@ const data = [
     price: 70,
     isFromNewCollection: false,
     sizes: ['S', 'M', 'L'],
-    fabric: ['cotton', 'polyester']
+    fabric: ['cotton', 'polyester'],
+    isOnSale: false,
+    discount: 0,
+    isBestseller: true,
   },
   {
     id: 14,
@@ -179,7 +218,10 @@ const data = [
     price: 99,
     isFromNewCollection: false,
     sizes: ['S', 'M', 'L'],
-    fabric: ['cotton', 'polyester']
+    fabric: ['cotton', 'polyester'],
+    isOnSale: true,
+    discount: 0.6,
+    isBestseller: false,
   },
   {
     id: 15,
@@ -192,8 +234,11 @@ const data = [
     price: 51,
     isFromNewCollection: false,
     sizes: ['S', 'M', 'L'],
-    fabric: ['cotton', 'polyester']
+    fabric: ['cotton', 'polyester'],
+    isOnSale: true,
+    discount: 0.6,
+    isBestseller: true,
   },
-]
+];
 
 export default data;

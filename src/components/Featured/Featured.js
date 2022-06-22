@@ -11,7 +11,7 @@ function Collection() {
     <section className="collection">
       <div className="collection__header">
       <h2 className='collection__title'>From new collection</h2>
-      <Link to='/products/collection' className='collection__btn'>See more</Link>
+      <Link to='/products/collection/all' className='collection__btn'>See more</Link>
       </div>
       <div className="collection__cards">
         <Card item={filteredData[0]} />

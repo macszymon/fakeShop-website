@@ -20,9 +20,22 @@
 }
 
 .best-selling__title {
-  color: var(--primary);
+  color: var(--fonts-primary);
   font-size: 2rem;
   font-weight: 400;
+}
+
+.best-selling__btn {
+  background-color: transparent;
+  border: 1px solid var(--fonts-primary);
+  color: var(--fonts-primary);
+  padding: .5em 1em;
+  transition: all .3s ease-in-out;
+}
+
+.best-selling__btn:hover {
+  opacity: .9;
+  transform: scale(1.1);
 }
 
 @media (max-width: 1250px) {

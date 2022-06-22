@@ -10,7 +10,7 @@
 
 .testimonials__card {
   padding: 1.5em;
-  background-color: var(--light-gray);
+  background-color: var(--base);
   text-align: center;
 }
 

@@ -12,21 +12,21 @@
 }
 
 .footer__copy {
-  border-top: 1px solid var(--dark-blue-gray);
-  color: var(--base);
+  border-top: 1px solid var(--fonts-primary);
+  color: var(--fonts-primary);
   margin-inline: auto;
   max-width: 1500px;
   padding-top: 1.5rem;
 }
 
 .footer__logo {
-  color: var(--base);
+  color: var(--fonts-primary);
   justify-self: center;
   font-size: 1.5rem;
 }
 
 .footer__list {
-  color: var(--base);
+  color: var(--fonts-primary);
 }
 
 .footer__item:first-child {

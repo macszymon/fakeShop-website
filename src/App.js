@@ -1,23 +1,19 @@
-import Nav from './components/Nav/Nav'
+import Nav from './components/Nav/Nav';
 import Footer from './components/Footer/Footer';
 import Home from './Pages/Home';
 import Products from './Pages/Products';
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
     <>
-      <div className="open"></div>
-      <Nav/>
+      <div className='open'></div>
+      <Nav />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="products/:category" element={<Products />} />
-        <Route path="products/men/:category" element={<Products />} />
-        <Route path="products/women/:category" element={<Products />} />
-        <Route path="products/sale/:category" element={<Products />} />
-        <Route path="products/collection/:category" element={<Products />} />
+        <Route path='/' element={<Home />} />
+        <Route path='products/:category/:type' element={<Products />} />
       </Routes>
-      <Footer/>
+      <Footer />
     </>
   );
 }

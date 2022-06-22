@@ -8,7 +8,7 @@ import {TbSeeding} from 'react-icons/tb'
 function Features() {
   return (
     <section className="features">
-      <h2 className='features__header'>Customer on the first place</h2>
+      <h2 className='features__header'>Customers on the first place</h2>
       <div className="features__cards">
       <FeaturesCard icon={<BsTruck className='features-card__icon' size={24}/>} title='fast delivery'/>
       <FeaturesCard icon={<VscPackage className='features-card__icon' size={24}/>} title='easy return'/>

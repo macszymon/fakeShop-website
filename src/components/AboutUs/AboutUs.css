@@ -15,7 +15,7 @@
 
 .about-us__text {
   background-color: var(--primary);
-  color: var(--base);
+  color: var(--fonts-primary);
   padding: 4rem;
 }
 
@@ -32,9 +32,9 @@
 }
 
 .about-us__btn {
-  background-color: rgba(249, 249, 249, .15);
+  background-color: rgba(249, 249, 249, 0.414);
   border: none;
-  color: var(--base);
+  color: var(--fonts-primary);
   padding: 1em;
   transition: all .3s ease-in-out;
 }

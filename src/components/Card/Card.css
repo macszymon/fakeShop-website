@@ -37,21 +37,21 @@
 }
 
 .card__price {
+  color: var(--fonts-primary);
   font-size: 1.7rem;
   font-weight: 400;
   margin-bottom: .5rem;
 }
 
-.card__add {
-  background-color: var(--primary);
-  color: var(--base);
-  padding: 1em;
-  transition: all .3s ease-in-out;
+.card__old-price {
+  font-size: 1.2rem;
+  text-decoration: line-through;
+  color: var(--fonts-primary);
 }
 
-.card__add:hover {
-  opacity: .9;
-  transform: scale(1.1);
+.card__discount {
+  color: var(--fonts-tertiary);
+  font-size: 1.2rem;
 }
 
 @media (max-width: 350px) {

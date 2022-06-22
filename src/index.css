@@ -6,20 +6,22 @@
 
 :root {
   --base: #FFF;
-  --primary: #2A254B;
-  --blue-primary: #4E4D93;
+  --primary: #F1EBDF;
+  --secondary: #FAF9F8;
+  /* --blue-primary: #4E4D93;
   --blue-gray: #EBE8F4;
   --dark-blue-gray: #CAC6DA;
-  --light-gray: #f9f9f9;
-  --fonts-primary: #22202E;
-  --fonts-secondary: #726E8D;
-  --fonts-tertiary: #5B5676;
+  --light-gray: #f9f9f9; */
+  --fonts-primary: #222222;
+  --fonts-secondary: #FFFFFF;
+  --fonts-tertiary: #C9002E;
   ;
 }
 
 body {
+  background-color: var(--secondary);
   color: var(--fonts-primary);
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Libre Baskerville', serif;
 }
 
 .open {
@@ -34,7 +36,7 @@ body {
 
 button {
   cursor: pointer;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Libre Baskerville', serif;
 }
 
 ul,ol {
@@ -42,7 +44,7 @@ ul,ol {
 }
 
 a {
-  color: var(--base);
+  color: var(--fonts-primary);
   text-decoration: none;
 }
 

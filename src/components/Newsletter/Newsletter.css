@@ -1,5 +1,4 @@
 .newsletter {
-  background-color: var(--light-gray);
   padding: 3.25rem;
 }
 
@@ -12,14 +11,14 @@
 }
 
 .newsletter__header {
-  color: var(--primary);
+  color: var(--fonts-primary);
   font-size: 2rem;
   font-weight: 400;
   margin-bottom: 1rem;
 }
 
 .newsletter__desc {
-  color: var(--primary);
+  color: var(--fonts-primary);
   font-size: 1rem;
   line-height: 150%;
   margin-bottom: 4.5rem;
@@ -34,29 +33,29 @@
 }
 
 .newsletter__input {
-  background-color: var(--light-gray);
-  border: 1px solid transparent;
-  color: var(--primary);
-  font-family: 'Montserrat', sans-serif;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  color: var(--fonts-primary);
+  font-family: 'Libre Baskerville', serif;
   max-width: 450px;
   padding: 1.1em 2em;
   width: 100%;
 }
 
 .newsletter__input:focus {
-  border: 1px solid var(--primary);
+  border: 1px solid var(--fonts-primary);
   outline: none;
 }
 
 .newsletter__input::placeholder {
-  color: rgba(34, 32, 46, 0.2);
-  font-family: 'Montserrat', sans-serif;
+  color: rgba(0, 0, 0, 0.4);
+  font-family: 'Libre Baskerville', serif;
 }
 
 .newsletter__btn {
   background-color: var(--primary);
-  border: none;
-  color: var(--base);
+  border: 1px solid var(--fonts-primary);
+  color: var(--fonts-primary);
   font-size: 1rem;
   padding-inline: 2em;
 }
