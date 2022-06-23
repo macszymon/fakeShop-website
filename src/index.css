@@ -5,13 +5,12 @@
 }
 
 :root {
-  --base: #FFF;
-  --primary: #F1EBDF;
-  --secondary: #FAF9F8;
-  --tertiary: #C9002E;
+  --base: #FAF9F8;
+  --primary: #115E83;
+  --secondary: #FFF;
   --fonts-primary: #222222;
-  --fonts-secondary: #FFFFFF;
-  --fonts-tertiary: #C9002E;
+  --fonts-secondary: #FFF;
+  --price-off: #C9002E;
   ;
 }
 
@@ -19,6 +18,7 @@ body {
   background-color: var(--secondary);
   color: var(--fonts-primary);
   font-family: 'Libre Baskerville', serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .open {
@@ -34,10 +34,13 @@ body {
 button {
   cursor: pointer;
   font-family: 'Libre Baskerville', serif;
+  font-family: 'Roboto', sans-serif;
+  
 }
 
 input, input::placeholder {
   font-family: 'Libre Baskerville', serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 ul,ol {

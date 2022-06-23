@@ -53,8 +53,8 @@
 
 .newsletter__btn {
   background-color: var(--primary);
-  border: 1px solid var(--fonts-primary);
-  color: var(--fonts-primary);
+  border: 1px solid var(--fonts-secondary);
+  color: var(--fonts-secondary);
   font-size: 1rem;
   padding-inline: 2em;
   transition: transform .3s ease-in-out;

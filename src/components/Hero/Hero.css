@@ -24,20 +24,21 @@
 }
 
 .hero__header {
-  color: var(--fonts-primary);
+  color: var(--fonts-secondary);
   font-size: 2rem;
   font-weight: 400;
   margin-bottom: 1rem;
 }
 
 .hero__subheader {
-  color: var(--fonts-primary);
+  color: var(--fonts-secondary);
   font-size: 1.1rem;
   font-weight: 400;
   margin-bottom: 4rem;
 }
 
 .hero__discount {
+  color: var(--fonts-secondary);
   font-weight: 400;
   font-size: 3.5rem;
   margin-bottom: 1rem;
@@ -49,8 +50,8 @@
 
 .hero__btn {
   background-color: transparent;
-  border: 1px solid var(--fonts-primary);
-  color: var(--fonts-primary);
+  border: 1px solid var(--fonts-secondary);
+  color: var(--fonts-secondary);
   padding: 1em 2em;
   transition: all .3s ease-in-out;
   z-index: 10;

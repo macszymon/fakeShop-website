@@ -16,7 +16,7 @@
 .about-us__text {
   align-items: flex-start;
   background-color: var(--primary);
-  color: var(--fonts-primary);
+  color: var(--fonts-secondary);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -37,8 +37,8 @@
 
 .about-us__btn {
   background-color: transparent;
-  border: 1px solid var(--fonts-primary);
-  color: var(--fonts-primary);
+  border: 1px solid var(--fonts-secondary);
+  color: var(--fonts-secondary);
   padding: 1em 2em;
   transition: all .3s ease-in-out;
 }

@@ -33,7 +33,7 @@ function Products() {
   return (
     <main className='products'>
       <div className='products__header'>
-        <h1>{category + ' | ' + type}</h1>
+        <h1>{category + ' | ' + type + ' | ' + filteredData.length + ' results'}</h1>
       </div>
       <div className="products__filters">
         <button className="products__btn">Product type <MdArrowDropDown size={20}/></button>

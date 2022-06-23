@@ -50,7 +50,7 @@
 }
 
 .card__discount {
-  color: var(--fonts-tertiary);
+  color: var(--price-off);
   font-size: 1.2rem;
 }
 

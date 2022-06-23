@@ -31,6 +31,7 @@
 }
 
 .nav__input {
+  background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.4);
   color: var(--fonts-primary);
   padding: .5em 1em;
@@ -98,10 +99,6 @@
 
 .nav__item-more-mobile li:not(:last-child) {
   margin-bottom: .7rem;
-}
-
-.nav__item-mobile.more-mobile  svg {
-  transform: rotate(180deg);
 }
 
 .nav__item a.active, .nav__item-mobile a.active {

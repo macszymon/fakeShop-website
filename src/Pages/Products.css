@@ -8,7 +8,7 @@
 }
 
 .products__header h1 {
-  color: var(--fonts-primary);
+  color: var(--fonts-secondary);
   font-size: 2.25rem;
   font-weight: 400;
 }

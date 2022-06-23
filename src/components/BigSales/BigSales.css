@@ -1,8 +1,6 @@
 .sales {
   align-items: center;
-  background-image: url('../../images/taylor-brandon-_LaExtFs-oo-unsplash.png');
-  background-size: cover;
-  background-position: center;
+  background-color: var(--primary);
   color: var(--fonts-secondary);
   display: flex;
   flex-direction: column;
@@ -10,16 +8,6 @@
   justify-content: center;
   position: relative;
   z-index: 1;
-}
-
-.sales::after {
-  background-color: rgba(0, 0, 0, 0.264);
-  content: '';
-  height: 100%;
-  inset: 0;
-  position: absolute;
-  /* width: 100%; */
-  z-index: 10;
 }
 
 .sales__title {
@@ -37,11 +25,11 @@
 }
 
 .sales__off {
+  color: var(--fonts-secondary);
   font-size: 6rem;
   font-weight: 400;
   margin-bottom: 1.5rem;
   position: relative;
-  z-index: 11;
 }
 
 .sales__off span {
@@ -49,12 +37,11 @@
 }
 
 .sales__btn {
-  background-color: var(--base);
-  border: none;
-  color: var(--fonts-primary);
+  background-color: transparent;
+  border: 1px solid var(--fonts-secondary);
+  color: var(--fonts-secondary);
   padding: 1em 2em;
   transition: all .3s ease-in-out;
-  z-index: 11;
 }
 .sales__btn:hover {
   opacity: .9;

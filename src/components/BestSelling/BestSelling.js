@@ -15,10 +15,10 @@ function BestSelling() {
       <Link to='/products/bestsellers/all' className='collection__btn'>See more</Link>
       </div>
       <div className="collection__cards">
-        <Card item={filteredData[0]} />
-        <Card item={filteredData[1]} />
         <Card item={filteredData[2]} />
-        <Card item={filteredData[3]} />
+        <Card item={filteredData[5]} />
+        <Card item={filteredData[8]} />
+        <Card item={filteredData[11]} />
       </div>
     </section>
   )
