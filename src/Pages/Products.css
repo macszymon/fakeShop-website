@@ -10,7 +10,6 @@
 .products__header h1 {
   color: var(--fonts-secondary);
   font-size: 2.25rem;
-  font-weight: 400;
 }
 
 .products__filters {
@@ -38,7 +37,6 @@
 }
 
 .products__no-result {
-  font-weight: 400;
   font-size: 4rem;
   padding: 2em 1.5em;
 }

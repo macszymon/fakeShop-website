@@ -12,14 +12,12 @@
 
 .sales__title {
   font-size: 4rem;
-  font-weight: 400;
   position: relative;
   z-index: 11;
 }
 
 .sales__festival {
   font-size: 3rem;
-  font-weight: 400;
   position: relative;
   z-index: 11;
 }
@@ -27,7 +25,6 @@
 .sales__off {
   color: var(--fonts-secondary);
   font-size: 6rem;
-  font-weight: 400;
   margin-bottom: 1.5rem;
   position: relative;
 }

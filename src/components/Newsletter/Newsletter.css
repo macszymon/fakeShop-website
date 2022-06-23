@@ -1,5 +1,5 @@
 .newsletter {
-  padding: 3.25rem;
+  padding: 5em;
 }
 
 .newsletter__container {
@@ -13,7 +13,6 @@
 .newsletter__header {
   color: var(--fonts-primary);
   font-size: 2rem;
-  font-weight: 400;
   margin-bottom: 1rem;
 }
 
@@ -66,8 +65,8 @@
 
 @media (max-width: 650px) {
   .newsletter {
-    background-color: var(--base);
-    padding: 0;
+    background-color: var(--secondary);
+    padding: 3em 0;
   }
 
   .newsletter__container {

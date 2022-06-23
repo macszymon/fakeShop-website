@@ -1,6 +1,6 @@
 import React from 'react'
 import './AboutUs.css'
-import img from '../../images/clark-street-mercantile-P3pI6xzovu0-unsplash.png'
+import img from '../../images/trent-bradley-xh6_ip3kzo8-unsplash.jpg'
 
 function AboutUs() {
   return (

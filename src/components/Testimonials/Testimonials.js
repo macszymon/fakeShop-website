@@ -37,7 +37,7 @@ function Testimonials() {
           <AiFillStar/>
           <AiFillStar/>
         </div>
-        <p className='testimonials__desc'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste omnis dolores qui quam eligendi saepe, sed tempora numquam illum modi eaque reprehenderit animi tenetur ratione id rem, iure architecto vel?</p>
+        <p className='testimonials__desc'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste omnis dolores qui quam eligendi saepe, sed tempora numquam illum modi eaque reprehenderit animi tenetur ratione id rem, iure?</p>
       </div>
     </section>
   )

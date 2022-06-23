@@ -1,38 +1,32 @@
 .about-us {
   display: grid;
-  gap: 1rem;
+  /* gap: 1rem; */
   grid-template-columns: 1fr 1fr;
-  margin-inline: auto;
-  max-width: 1500px;
-  padding: 5em;
+  grid-template-rows: 500px;
+  padding-top: 5em;
 }
 
 .about-us__img {
+  height: 100%;
   object-fit: cover;
   width: 100%;
-  height: 100%;
 }
 
 .about-us__text {
-  align-items: flex-start;
   background-color: var(--primary);
   color: var(--fonts-secondary);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   padding: 4rem;
 }
 
 .about-us__header {
   font-size: 2rem;
-  font-weight: 400;
-  margin-bottom: .9rem;
+  margin-bottom: 2rem;
 }
 
 .about-us__desc {
   font-size: 1.125rem;
   line-height: 24px;
-  margin-bottom: 9rem;
+  margin-bottom: 5rem;
 }
 
 .about-us__btn {
@@ -48,24 +42,26 @@
   transform: scale(1.1);
 }
 
-@media (max-width: 950px) {
+@media (max-width: 750px) {
   .about-us {
-    padding: 3em 1.5em;
-  }
-}
-
-@media (max-width: 650px) {
-  .about-us {
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 300px 300px;
     grid-template-columns: 1fr;
   }
-
+  
   .about-us__text {
-    padding: 1em;
+    padding: 1.5em;
   }
 
   .about-us__desc {
     font-size: .8rem;
     margin-bottom: 2rem;
   }
+}
+
+@media (max-width: 350px) {
+  .about-us {
+    grid-template-rows: 350px 350px;
+    grid-template-columns: 1fr;
+  }
+
 }

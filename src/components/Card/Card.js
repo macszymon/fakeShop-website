@@ -11,10 +11,10 @@ function Card({ item }) {
           {item.name}
           <div className='card__rating'>
             <AiFillStar className='card__star' />
-            <span>
+            <h4>
               {item.rate} &#8901; {item.reviews}{' '}
               {item.reviews > 1 ? 'reviews' : 'review'}
-            </span>
+            </h4>
           </div>
         </h3>
         {item.discount > 0 ? (

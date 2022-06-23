@@ -103,7 +103,6 @@
 
 .nav__item a.active, .nav__item-mobile a.active {
   color: var(--fonts-primary);
-  font-weight: 500;
 }
 
 .nav__list {

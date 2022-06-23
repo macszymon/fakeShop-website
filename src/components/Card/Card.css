@@ -19,7 +19,6 @@
 
 .card__title {
   font-size: 1.25rem;
-  font-weight: 400;
   margin-bottom: .3rem;
 }
 
@@ -27,7 +26,6 @@
   align-items: center;
   display: flex;
   font-size: 1rem;
-  font-weight: 400;
   gap: .5rem;
   margin-bottom: .5rem;
 }
@@ -39,7 +37,6 @@
 .card__price {
   color: var(--fonts-primary);
   font-size: 1.7rem;
-  font-weight: 400;
   margin-bottom: .5rem;
 }
 
