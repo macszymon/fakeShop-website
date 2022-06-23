@@ -4,7 +4,7 @@ import BestSelling from '../components/BestSelling/BestSelling';
 import Features from './../components/Features/Features';
 import Featured from '../components/Featured/Featured';
 import BigSales from '../components/BigSales/BigSales';
-import Testimonials from '../components/Testimonials/Testimonials';
+import Posts from '../components/Posts/Posts'
 import AboutUs from './../components/AboutUs/AboutUs';
 import Newsletter from './../components/Newsletter/Newsletter';
 
@@ -16,7 +16,7 @@ function Home() {
       <Features />
       <Featured />
       <BigSales/>
-      <Testimonials/>
+      <Posts/>
       <AboutUs />
       <Newsletter />
     </main>

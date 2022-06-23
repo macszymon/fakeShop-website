@@ -126,7 +126,7 @@ function Nav() {
             </ul>
           </li>
           <li className='nav__item'>
-            <Link to='/blog'>Blog</Link>
+            <Link to='/magazine'>Magazine</Link>
           </li>
         </ul>
       </div>
@@ -235,7 +235,7 @@ function Nav() {
               </ul>
             </li>
             <li className='nav__item-mobile'>
-              <Link to='/blog'>Blog</Link>
+              <Link to='/magazine'>Magazine</Link>
             </li>
           </ul>
         </div>

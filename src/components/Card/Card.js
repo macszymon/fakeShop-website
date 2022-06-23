@@ -1,10 +1,11 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import { AiFillStar } from 'react-icons/ai';
 import './Card.css';
 
 function Card({ item }) {
   return (
-    <div className='card'>
+    <Link to={'/product/' + item.id} className='card'>
       <img className='card__img' src={item.img} />
       <div className='card__text'>
         <h3 className='card__title'>
@@ -29,7 +30,7 @@ function Card({ item }) {
           <h4 className='card__price'>{item.price}$</h4>
         )}
       </div>
-    </div>
+    </Link>
   );
 }
 
