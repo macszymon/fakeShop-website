@@ -14,8 +14,12 @@
 }
 
 .about-us__text {
+  align-items: flex-start;
   background-color: var(--primary);
   color: var(--fonts-primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 4rem;
 }
 
@@ -32,15 +36,15 @@
 }
 
 .about-us__btn {
-  background-color: rgba(249, 249, 249, 0.414);
-  border: none;
+  background-color: transparent;
+  border: 1px solid var(--fonts-primary);
   color: var(--fonts-primary);
-  padding: 1em;
+  padding: 1em 2em;
   transition: all .3s ease-in-out;
 }
 
 .about-us__btn:hover {
-  background-color: rgba(249, 249, 249, .5);
+  opacity: .9;
   transform: scale(1.1);
 }
 
@@ -52,7 +56,7 @@
 
 @media (max-width: 650px) {
   .about-us {
-    grid-template-rows: 300px 300px;
+    grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr;
   }
 

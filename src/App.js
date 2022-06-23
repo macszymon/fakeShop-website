@@ -3,6 +3,7 @@ import Footer from './components/Footer/Footer';
 import Home from './Pages/Home';
 import Products from './Pages/Products';
 import { Routes, Route } from 'react-router-dom';
+import Error from './Pages/Error';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='products/:category/:type' element={<Products />} />
+        <Route path='*' element={<Error />} />
       </Routes>
       <Footer />
     </>

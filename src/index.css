@@ -8,10 +8,7 @@
   --base: #FFF;
   --primary: #F1EBDF;
   --secondary: #FAF9F8;
-  /* --blue-primary: #4E4D93;
-  --blue-gray: #EBE8F4;
-  --dark-blue-gray: #CAC6DA;
-  --light-gray: #f9f9f9; */
+  --tertiary: #C9002E;
   --fonts-primary: #222222;
   --fonts-secondary: #FFFFFF;
   --fonts-tertiary: #C9002E;
@@ -36,6 +33,10 @@ body {
 
 button {
   cursor: pointer;
+  font-family: 'Libre Baskerville', serif;
+}
+
+input, input::placeholder {
   font-family: 'Libre Baskerville', serif;
 }
 
