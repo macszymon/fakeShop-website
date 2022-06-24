@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Nav.css';
-import { IoIosSearch } from 'react-icons/io';
-import { BsCart3 } from 'react-icons/bs';
 import { VscAccount } from 'react-icons/vsc';
-import { AiOutlineMenu } from 'react-icons/ai';
+import { AiOutlineMenu, AiOutlineHeart, AiOutlineShoppingCart, AiOutlineSearch } from 'react-icons/ai';
 import { Link, useLocation } from 'react-router-dom';
 
 function Nav() {
@@ -18,18 +16,19 @@ function Nav() {
     <nav className='nav'>
       <div className='nav__main'>
         <form className='nav__form'>
-          <IoIosSearch size={20} />
+          <AiOutlineSearch size={22} />
           <input className='nav__input' type='text' />
         </form>
         <Link to='/' className='nav__logo'>
           fakeShop
         </Link>
         <div className='nav__icons'>
-          <BsCart3 size={20} />
-          <VscAccount size={20} />
+          <Link to='/favourites'><AiOutlineHeart size={22}/></Link>
+          <Link to='/cart'><AiOutlineShoppingCart size={22}/></Link>
+          <Link to='/favourites'><VscAccount size={22}/></Link>
           <AiOutlineMenu
             className='nav__hamburger'
-            size={20}
+            size={22}
             onClick={() => setIsOpen((prev) => !prev)}
           />
         </div>

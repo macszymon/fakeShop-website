@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import { AiFillStar } from 'react-icons/ai';
+import { AiOutlineStar } from 'react-icons/ai';
 import './Card.css';
 
 function Card({ item }) {
@@ -11,7 +11,7 @@ function Card({ item }) {
         <h3 className='card__title'>
           {item.name}
           <div className='card__rating'>
-            <AiFillStar className='card__star' />
+            <AiOutlineStar className='card__star' />
             <h4>
               {item.rate} &#8901; {item.reviews}{' '}
               {item.reviews > 1 ? 'reviews' : 'review'}
@@ -19,15 +19,12 @@ function Card({ item }) {
           </div>
         </h3>
         {item.discount > 0 ? (
-          <h4 className='card__price card__sale'>
+          <h3 className='card__price-new card__sale'>
             {Math.floor(item.price * item.discount)}${' '}
-            <span className='card__old-price'>{item.price}$</span>{' '}
-            <span className='card__discount'>
-              ({Math.round((1 - item.discount) * 100)}% off)
-            </span>{' '}
-          </h4>
+            <span className='card__old-price'>{item.price}$</span>
+          </h3>
         ) : (
-          <h4 className='card__price'>{item.price}$</h4>
+          <h3 className='card__price'>{item.price}$</h3>
         )}
       </div>
     </Link>

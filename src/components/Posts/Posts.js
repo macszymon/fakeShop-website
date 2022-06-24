@@ -7,7 +7,7 @@ function Posts() {
   return (
     <section className='posts'>
       <h2 className='posts__header'>Magazine</h2>
-      <h3 className='posts__subheader'>Featured posts</h3>
+      <h4 className='posts__subheader'>Featured posts</h4>
       <div className='posts__container'>
         <div className='post'>
           <img
@@ -19,7 +19,7 @@ function Posts() {
             <h4 className='post__category'>Health</h4>
             <h3 className='post__title'>Lorem ipsum consectetur</h3>
             <Link className='post__read' to='magazine/post/1'>
-              Read the article <BsArrowRight />
+              Read <BsArrowRight />
             </Link>
           </div>
         </div>
@@ -33,7 +33,7 @@ function Posts() {
             <h4 className='post__category'>Family</h4>
             <h3 className='post__title'>Lorem ipsum dolor sit</h3>
             <Link className='post__read' to='magazine/post/1'>
-              Read the article <BsArrowRight />
+              Read <BsArrowRight />
             </Link>
           </div>
         </div>
@@ -47,7 +47,7 @@ function Posts() {
             <h4 className='post__category'>Social life</h4>
             <h3 className='post__title'>Magni lorem, beatae?</h3>
             <Link className='post__read' to='magazine/post/1'>
-              Read the article <BsArrowRight />
+              Read <BsArrowRight />
             </Link>
           </div>
         </div>

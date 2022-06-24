@@ -10,7 +10,6 @@
 
 .nav__main {
   align-items: center;
-  border-bottom: 1px solid var(--fonts-primary);
   display: grid;
   grid-template-columns: 40% 1fr 40%;
   margin-inline: auto;
@@ -57,7 +56,6 @@
 }
 
 .nav__categories-mobile {
-  border-top: 1px solid var(--fonts-primary);
   display: none;
   font-size: 1.2rem;
   margin-inline: auto;
@@ -173,6 +171,10 @@
     padding-bottom: 1.5em;
   }
 
+  .nav__icons {
+    gap: .7rem;
+  }
+
   .nav__categories {
     display: none;
   }
@@ -186,6 +188,7 @@
   }
 
   .nav__logo {
+    font-size: 1.3rem;
     justify-self: unset;
   }
 

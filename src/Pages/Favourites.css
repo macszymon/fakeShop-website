@@ -1,0 +1,23 @@
+.favourites {
+  padding: 1.8em 5em;
+  margin-top: 8.5625rem;
+}
+
+.favourites__cards {
+  display: grid;
+  gap: 1.1rem;
+  grid-template-columns: repeat(auto-fill, 305px);
+  justify-content: center;
+}
+
+.favourites__header {
+  color: var(--fonts-primary);
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 650px) {
+  .favourites {
+    margin-top: 0;
+  }
+}

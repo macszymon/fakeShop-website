@@ -33,10 +33,10 @@ function Footer() {
         <ul className='footer__list'>
           <li className='footer__item'>Company</li>
           <li className='footer__item'>
-            <a href='#about-us'>About us</a>
+            <Link to='/about-us' >About us</Link>
           </li>
           <li className='footer__item'>
-            <Link to='/blog'>Blog</Link>
+            <Link to='/magazine'>Blog</Link>
           </li>
           <li className='footer__item'>
             <Link to='/faqs'>FAQs</Link>

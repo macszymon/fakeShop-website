@@ -34,8 +34,14 @@
   width: 1rem;
 }
 
+
 .card__price {
   color: var(--fonts-primary);
+  font-size: 1.7rem;
+  margin-bottom: .5rem;
+}
+.card__price-new {
+  color: var(--price-off);
   font-size: 1.7rem;
   margin-bottom: .5rem;
 }
@@ -44,11 +50,6 @@
   font-size: 1.2rem;
   text-decoration: line-through;
   color: var(--fonts-primary);
-}
-
-.card__discount {
-  color: var(--price-off);
-  font-size: 1.2rem;
 }
 
 @media (max-width: 350px) {

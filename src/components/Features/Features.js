@@ -12,19 +12,19 @@ function Features() {
       <div className='features__cards'>
         <FeaturesCard
           icon={<BsTruck className='features-card__icon' size={24} />}
-          title='fast delivery'
+          title='Fast delivery'
         />
         <FeaturesCard
           icon={<VscPackage className='features-card__icon' size={24} />}
-          title='easy return'
+          title='Easy return'
         />
         <FeaturesCard
           icon={<BsCheck2Circle className='features-card__icon' size={24} />}
-          title='quality products'
+          title='Quality products'
         />
         <FeaturesCard
           icon={<TbSeeding className='features-card__icon' size={24} />}
-          title='recycled packaging'
+          title='Recycled packaging'
         />
       </div>
     </section>
