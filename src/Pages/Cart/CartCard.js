@@ -2,7 +2,13 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import {AiOutlineDelete} from 'react-icons/ai'
 
-function CartCard({item}) {
+function CartCard({cart, item, setCart}) {
+  function deleteItem() {
+    let newCart = cart.filter(el => el != item)
+    setCart(newCart)
+    localStorage.setItem('cart', JSON.stringify(newCart))
+  }
+
   return (
     <div className='cart-card'>
       <Link to={'/product/' + item.id}>
@@ -11,7 +17,7 @@ function CartCard({item}) {
       <div className='cart-card__text'>
         <h3 className='cart-card__title'>
           {item.name}
-          <AiOutlineDelete size={24}/>
+          <AiOutlineDelete size={24} onClick={deleteItem}/>
         </h3>
         {item.discount > 0 ? (
           <h3 className='cart-card__price-new cart-card__sale'>
