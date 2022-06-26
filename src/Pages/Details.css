@@ -99,6 +99,28 @@
   transform: scale(1.1);
 }
 
+.details__label {
+  position: relative;
+  padding: .2em 1em
+}
+
+.details__label input[type="radio"] {
+  appearance: none;
+  background-color: transparent;
+  position: absolute;
+  inset: 0;
+  border: 1px solid var(--fonts-primary);
+  z-index: -1;
+}
+
+.details__label input[type="radio"]:checked {
+  background-color: var(--fonts-primary);
+}
+
+.details__label input[type="radio"]:checked+span{ 
+  color: var(--fonts-secondary);
+} 
+
 @media (max-width: 950px) {
   .details {
     flex-direction: column;

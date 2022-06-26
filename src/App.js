@@ -16,7 +16,7 @@ function App() {
   return (
     <>
       <div className='open'></div>
-      <Nav />
+      <Nav cartItems={cart.length} />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='products/:category/:type' element={<Products />} />

@@ -4,7 +4,7 @@ import { VscAccount } from 'react-icons/vsc';
 import { AiOutlineMenu, AiOutlineHeart, AiOutlineShoppingCart, AiOutlineSearch } from 'react-icons/ai';
 import { Link, useLocation } from 'react-router-dom';
 
-function Nav() {
+function Nav({cartItems}) {
   const [isOpen, setIsOpen] = useState(false);
 
   const location = useLocation();
@@ -24,7 +24,7 @@ function Nav() {
         </Link>
         <div className='nav__icons'>
           <Link to='/favourites'><AiOutlineHeart size={22}/></Link>
-          <Link to='/cart'><AiOutlineShoppingCart size={22}/></Link>
+          <Link className='nav-cart__icon' to='/cart'><AiOutlineShoppingCart size={22}/>{cartItems > 0 && <span className='nav-cart__notification'>{cartItems}</span>}</Link>
           <Link to='/favourites'><VscAccount size={22}/></Link>
           <AiOutlineMenu
             className='nav__hamburger'

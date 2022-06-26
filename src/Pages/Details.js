@@ -12,7 +12,6 @@ function Details({favourites, setFavourites,cart, setCart}) {
   const [product] = data.filter(item => item.id == id)
   let cartCopy = [...cart];
   let existingItem = cartCopy.find(cartItem => cartItem.id === product.id && cartItem.sizes === sizeCart);
-  console.log(sizeCart);
 
   useEffect(() => {
     favourites.forEach(item => item.id === product.id && setIsFav(true))
@@ -47,7 +46,6 @@ function Details({favourites, setFavourites,cart, setCart}) {
       setCart(prev => [...prev, {...product, quantity: Number(quantity), sizes: sizeCart}])
     }
   }
-  console.log(quantity);
   useEffect(() => {
     localStorage.setItem('cart', JSON.stringify(cart))
   }, [cart])
@@ -80,7 +78,7 @@ function Details({favourites, setFavourites,cart, setCart}) {
           <form className='details__form' onSubmit={(e) => handleSubmit(e)}>
             <div className="details__sizes">
               <span>Choose size: </span>
-            {product.sizes.map(size =><label key={size}><input required type="radio" name='size' id={size} value={size} onChange={(e) => setSizeCart(e.target.value)} />{size}</label> )}
+            {product.sizes.map(size =><label className='details__label' key={size}><input required type="radio" name='size' id={size} value={size} onChange={(e) => setSizeCart(e.target.value)} /><span>{size}</span></label> )}
             </div>
             <button className="details__add">Add to cart</button>
             <input className='details__quantity' type="number" name="quantity" min={1} max={20} value={quantity} onChange={(e) => setQuantity(e.target.value)}/>
