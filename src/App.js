@@ -6,6 +6,7 @@ import Details from './Pages/Details';
 import { Routes, Route } from 'react-router-dom';
 import Favourites from './Pages/Favourites';
 import Cart from './Pages/Cart/Cart';
+import Magazine from './Pages/Magazine/Magazine';
 import Error from './Pages/Error';
 import { useState } from 'react';
 
@@ -22,6 +23,7 @@ function App() {
         <Route path='products/:category/:type' element={<Products />} />
         <Route path='product/:id' element={<Details cart={cart} setCart={setCart} favourites={favourites} setFavourites={setFavourites} />} />
         <Route path='favourites' element={<Favourites favourites={favourites} setFavourites={setFavourites} />} />
+        <Route path='magazine' element={<Magazine/>} />
         <Route path='cart' element={<Cart cart={cart} setCart={setCart} />} />
         <Route path='*' element={<Error />} />
       </Routes>
