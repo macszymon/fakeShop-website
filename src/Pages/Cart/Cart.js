@@ -11,7 +11,7 @@ function Cart({ cart, setCart }) {
   return (
     <main className='cart'>
       <h2 className='cart__header'>Shopping cart</h2>
-      <div className="cart__container">
+      {cart.length > 0 ? <div className="cart__container">
       <div className='cart__cards'>
         {cart.map((item) => (
           <CartCard key={item.id} item={item} cart={cart} setCart={setCart} />
@@ -25,7 +25,8 @@ function Cart({ cart, setCart }) {
         <button className='cart__checkout'>Go to checkout</button>
         <p>14 days withdrawal and free returns.</p>
       </div>
-      </div>
+      </div> : <h3 className='cart__empty'>Add items to the cart and see the summary</h3>}
+      
     </main>
   );
 }

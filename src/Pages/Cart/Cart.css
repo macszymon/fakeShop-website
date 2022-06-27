@@ -114,6 +114,10 @@
   transform: scale(1.1);
 }
 
+.cart__empty {
+  margin-bottom: 3.8rem;
+}
+
 @media (max-width: 950px) {
   .cart {
     padding: 1.5em;

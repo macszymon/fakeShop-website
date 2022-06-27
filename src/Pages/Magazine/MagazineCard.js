@@ -4,17 +4,17 @@ import { BsArrowRight } from 'react-icons/bs';
 
 function MagazineCard({post}) {
   return (
-    <div className='post'>
-      <p className='post__date'>16 June 2022</p>
+    <div className='magazine__post'>
+      <p className='magazine__post-date'>{post.addedDate}</p>
     <img
-      className='post__img'
+      className='magazine__post-img'
       src={post.img}
       alt='friends talking'
     />
-    <div className='post__text'>
-      <h4 className='post__category'>{post.category}</h4>
-      <h3 className='post__title'>{post.title}</h3>
-      <Link className='post__read' to='magazine/post/1'>
+    <div className='magazine__post-text'>
+      <h4 className='magazine__post-category'>{post.category}</h4>
+      <h3 className='magazine__post-title'>{post.title}</h3>
+      <Link className='magazine__post-read' to={'magazine/post/'+post.id}>
         Read <BsArrowRight />
       </Link>
     </div>

@@ -9,7 +9,7 @@ function Magazine() {
       <h1 className='magazine__header'>Magazine</h1>
       <div className='magazine__posts'>
         {posts.map((item) => (
-          <MagazineCard post={item} />
+          <MagazineCard key={item.id} post={item} />
         ))}
       </div>
     </main>

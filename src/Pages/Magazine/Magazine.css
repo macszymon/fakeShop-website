@@ -3,11 +3,11 @@
 }
 
 .magazine__posts {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 2rem;
-  justify-content: center;
-  padding: 5em;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 5em 2em;
+  width: 100%;
 }
 
 .magazine__header {
@@ -17,38 +17,47 @@
   padding: 7.6rem 5rem 2rem 5rem;
 }
 
-.post {
+.magazine__post {
   display: flex;
-  flex-direction: column;
-  gap: .5rem;
+  flex-direction: row;
+  justify-self: flex-start;
+  position: relative;
+  width: 70%;
 }
 
-.post__text {
+.magazine__post:nth-child(odd) {
+  align-self: flex-end;
+}
+
+.magazine__post-text {
   background-color: var(--base);
   padding: 1em;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
 }
 
-.post__category {
-  font-size: .8rem;
+.magazine__post-category {
+  font-size: 1rem;
   margin-bottom: .2rem;
 }
 
-.post__title {
-  font-size: 1rem;
+.magazine__post-title {
+  font-size: 2.3rem;
   margin-bottom: 4rem;
 }
 
-.post__read {
+
+.magazine__post-read {
   align-items: center;
   display: flex;
   gap: 1rem;
   font-size: .7rem;
-  justify-content: center;
   position: relative;
 }
 
-.post__read::after {
+.magazine__post-read::after {
   background-color: var(--fonts-primary);
   content: '';
   position: absolute;
@@ -58,29 +67,51 @@
   transition: all .3s ease-in-out;
 }
 
-.post__read:hover::after {
-  width: 20%;
+.magazine__post-read:hover::after {
+  width: 15%;
 }
 
-.post__img {
+.magazine__post-img {
   height: 100%;
   object-fit: cover;
-  width: 100%;
+  width: 60%;
 }
 
-.post__date {
-  text-align: center;
+.magazine__post-date {
+  position: absolute;
+  top: -20px;
 }
 
-@media (max-width: 950px) {
+@media (max-width: 1050px) {
   .magazine__posts {
     padding-inline: 1em;
+  }
+
+  .magazine__post {
+    align-self: center;
+    width: 100%;
+  }
+
+  .magazine__post:nth-child(odd) {
+    align-self: center;
   }
 }
 
 @media (max-width: 700px) {
-  .magazine__posts {
-    grid-template-columns: 1fr;
+  .magazine__post {
+    flex-direction: column;
+  }
+
+  .magazine__post-img {
+    width: 100%;
+  }
+
+  .magazine__post-text {
+    width: 100%;
+  }
+
+  .magazine__post-title {
+    font-size: 2rem;
   }
 
   .magazine__header {

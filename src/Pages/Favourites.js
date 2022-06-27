@@ -7,8 +7,8 @@ function Favourites({favourites}) {
     <main className='favourites'>
       <h2 className='favourites__header'>Favourites | {favourites.length} {favourites.length !== 1 ? 'items' : 'item'}</h2>
       {favourites.length > 0 ? <div className="favourites__cards">
-      { favourites.map(item => <Card item={item}/>)}
-      </div> : <h3>Do you want to add products to your Favorites? Just click the heart symbol on the product.</h3>}
+      { favourites.map(item => <Card key={item.id} item={item}/>)}
+      </div> : <h3 className='favourites__empty'>Do you want to add products to your Favorites? Just click the heart symbol on the product.</h3>}
       </main>
   )
 }

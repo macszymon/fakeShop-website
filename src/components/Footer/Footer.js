@@ -36,7 +36,7 @@ function Footer() {
             <Link to='/about-us' >About us</Link>
           </li>
           <li className='footer__item'>
-            <Link to='/magazine'>Blog</Link>
+            <Link to='/magazine'>Magazine</Link>
           </li>
           <li className='footer__item'>
             <Link to='/faqs'>FAQs</Link>
