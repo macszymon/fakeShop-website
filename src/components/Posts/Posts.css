@@ -1,4 +1,6 @@
 .posts {
+  margin-inline: auto;
+  max-width: 1500px;
   padding-inline: 5em;
   padding-top: 5em;
 }

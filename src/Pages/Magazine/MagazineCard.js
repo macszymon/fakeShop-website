@@ -14,7 +14,7 @@ function MagazineCard({post}) {
     <div className='magazine__post-text'>
       <h4 className='magazine__post-category'>{post.category}</h4>
       <h3 className='magazine__post-title'>{post.title}</h3>
-      <Link className='magazine__post-read' to={'magazine/post/'+post.id}>
+      <Link className='magazine__post-read' to={'/magazine/post/'+post.id}>
         Read <BsArrowRight />
       </Link>
     </div>

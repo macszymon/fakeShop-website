@@ -2,7 +2,9 @@
   display: flex;
   gap: 4rem;
   justify-content: center;
+  margin-inline: auto;
   margin-top: 8.5625rem;
+  max-width: 1500px;
   width: 100%;
   padding: 2em 5em;
 }
