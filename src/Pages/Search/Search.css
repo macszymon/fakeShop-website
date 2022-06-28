@@ -1,0 +1,28 @@
+.search {
+  margin-top: 8.5625rem;
+}
+
+.search__cards {
+  display: grid;
+  gap: 1.1rem;
+  grid-template-columns: repeat(auto-fill, 305px);
+  justify-content: center;
+  padding: 1.8em 5em;
+}
+
+.search__no-result {
+  font-size: 4rem;
+  padding: 2em 1.5em;
+}
+
+@media (max-width: 650px) {
+  .search {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 350px) {
+  .search__cards {
+    grid-template-columns: repeat(auto-fill, 205px);
+  }
+}

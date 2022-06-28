@@ -2,22 +2,31 @@ import React, { useState, useEffect } from 'react';
 import './Nav.css';
 import { VscAccount } from 'react-icons/vsc';
 import { AiOutlineMenu, AiOutlineHeart, AiOutlineShoppingCart, AiOutlineSearch } from 'react-icons/ai';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 function Nav({cartItems}) {
   const [isOpen, setIsOpen] = useState(false);
+  const [search, setSearch] = useState('')
+
+  const navigate = useNavigate();
 
   const location = useLocation();
   useEffect(() => {
     setIsOpen(false);
   }, [location]);
 
+  function handleSubmit(e) {
+    e.preventDefault()
+    setSearch('')
+    navigate('/search/'+search)
+  }
+
   return (
     <nav className='nav'>
       <div className='nav__main'>
-        <form className='nav__form'>
+        <form className='nav__form' onSubmit={e => handleSubmit(e)}>
           <AiOutlineSearch size={22} />
-          <input className='nav__input' type='text' />
+          <input className='nav__input' type='text' value={search} onChange={e => setSearch(e.target.value)} />
         </form>
         <Link to='/' className='nav__logo'>
           fakeShop
@@ -40,15 +49,24 @@ function Nav({cartItems}) {
           <li className='nav__item'>
             <Link to='/products/sale/all'>Sale</Link>
             <ul className='nav__item-more'>
-              <li>
-                <Link to='/products/sale/all'>All</Link>
-              </li>
-              <li>
-                <Link to='/products/sale/men'>Men</Link>
-              </li>
-              <li>
-                <Link to='/products/sale/women'>Women</Link>
-              </li>
+            <li>
+                  <Link to='/products/sale/all'>All</Link>
+                </li>
+                <li>
+                  <Link to='/products/sale/top'>Tops</Link>
+                </li>
+                <li>
+                  <Link to='/products/sale/bottom'>Bottoms</Link>
+                </li>
+                <li>
+                  <Link to='/products/sale/full-body'>Full Body</Link>
+                </li>
+                <li>
+                  <Link to='/products/sale/shoes'>Shoes</Link>
+                </li>
+                <li>
+                  <Link to='/products/sale/accessories'>Accessories</Link>
+                </li>
             </ul>
           </li>
           <li className='nav__item'>
@@ -59,9 +77,6 @@ function Nav({cartItems}) {
               </li>
               <li>
                 <Link to='/products/bestsellers/men'>Bestsellers</Link>
-              </li>
-              <li>
-                <Link to='/products/collection/men'>New Collection</Link>
               </li>
               <li>
                 <Link to='/products/men/top'>Tops</Link>
@@ -90,9 +105,6 @@ function Nav({cartItems}) {
                 <Link to='/products/bestsellers/women'>Bestsellers</Link>
               </li>
               <li>
-                <Link to='/products/collection/women'>New Collection</Link>
-              </li>
-              <li>
                 <Link to='/products/women/top'>Tops</Link>
               </li>
               <li>
@@ -112,15 +124,24 @@ function Nav({cartItems}) {
           <li className='nav__item'>
             <Link to='/products/collection/all'>New Collection</Link>
             <ul className='nav__item-more'>
-              <li>
-                <Link to='/products/collection/all'>All</Link>
-              </li>
-              <li>
-                <Link to='/products/collection/men'>Men</Link>
-              </li>
-              <li>
-                <Link to='/products/collection/women'>Women</Link>
-              </li>
+            <li>
+                  <Link to='/products/collection/all'>All</Link>
+                </li>
+                <li>
+                  <Link to='/products/collection/top'>Tops</Link>
+                </li>
+                <li>
+                  <Link to='/products/collection/bottom'>Bottoms</Link>
+                </li>
+                <li>
+                  <Link to='/products/collection/full-body'>Full Body</Link>
+                </li>
+                <li>
+                  <Link to='/products/collection/shoes'>Shoes</Link>
+                </li>
+                <li>
+                  <Link to='/products/collection/accessories'>Accessories</Link>
+                </li>
             </ul>
           </li>
           <li className='nav__item'>
@@ -144,10 +165,19 @@ function Nav({cartItems}) {
                   <Link to='/products/sale/all'>All</Link>
                 </li>
                 <li>
-                  <Link to='/products/sale/men'>Men</Link>
+                  <Link to='/products/sale/top'>Tops</Link>
                 </li>
                 <li>
-                  <Link to='/products/sale/women'>Women</Link>
+                  <Link to='/products/sale/bottom'>Bottoms</Link>
+                </li>
+                <li>
+                  <Link to='/products/sale/full-body'>Full Body</Link>
+                </li>
+                <li>
+                  <Link to='/products/sale/shoes'>Shoes</Link>
+                </li>
+                <li>
+                  <Link to='/products/sale/accessories'>Accessories</Link>
                 </li>
               </ul>
             </li>
@@ -162,9 +192,6 @@ function Nav({cartItems}) {
                 </li>
                 <li>
                   <Link to='/products/bestsellers/men'>Bestsellers</Link>
-                </li>
-                <li>
-                  <Link to='/products/collection/men'>New Collection</Link>
                 </li>
                 <li>
                   <Link to='/products/men/top'>Tops</Link>
@@ -196,9 +223,6 @@ function Nav({cartItems}) {
                   <Link to='/products/bestsellers/women'>Bestsellers</Link>
                 </li>
                 <li>
-                  <Link to='/products/collection/women'>New Collection</Link>
-                </li>
-                <li>
                   <Link to='/products/women/top'>Tops</Link>
                 </li>
                 <li>
@@ -221,14 +245,23 @@ function Nav({cartItems}) {
             >
               New Collection
               <ul className='nav__item-more-mobile'>
-                <li>
+              <li>
                   <Link to='/products/collection/all'>All</Link>
                 </li>
                 <li>
-                  <Link to='/products/collection/men'>Men</Link>
+                  <Link to='/products/collection/top'>Tops</Link>
                 </li>
                 <li>
-                  <Link to='/products/collection/women'>Women</Link>
+                  <Link to='/products/collection/bottom'>Bottoms</Link>
+                </li>
+                <li>
+                  <Link to='/products/collection/full-body'>Full Body</Link>
+                </li>
+                <li>
+                  <Link to='/products/collection/shoes'>Shoes</Link>
+                </li>
+                <li>
+                  <Link to='/products/collection/accessories'>Accessories</Link>
                 </li>
               </ul>
             </li>
