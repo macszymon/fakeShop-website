@@ -48,6 +48,7 @@ ul,ol {
 
 a {
   color: var(--fonts-primary);
+  cursor: pointer;
   text-decoration: none;
 }
 

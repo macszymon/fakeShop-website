@@ -47,36 +47,27 @@ function Nav({cartItems}) {
             <Link to='/'>Home</Link>
           </li>
           <li className='nav__item'>
-            <Link to='/products/sale/all'>Sale</Link>
+            <span>Sale</span>
             <ul className='nav__item-more'>
             <li>
-                  <Link to='/products/sale/all'>All</Link>
+                  <Link to='/products/men/all/sale'>Men</Link>
                 </li>
                 <li>
-                  <Link to='/products/sale/top'>Tops</Link>
-                </li>
-                <li>
-                  <Link to='/products/sale/bottom'>Bottoms</Link>
-                </li>
-                <li>
-                  <Link to='/products/sale/full-body'>Full Body</Link>
-                </li>
-                <li>
-                  <Link to='/products/sale/shoes'>Shoes</Link>
-                </li>
-                <li>
-                  <Link to='/products/sale/accessories'>Accessories</Link>
+                  <Link to='/products/women/all/sale'>Women</Link>
                 </li>
             </ul>
           </li>
           <li className='nav__item'>
-            <Link to='/products/men/all'>Men</Link>
+            <span>Men</span>
             <ul className='nav__item-more'>
               <li>
                 <Link to='/products/men/all'>All</Link>
               </li>
               <li>
-                <Link to='/products/bestsellers/men'>Bestsellers</Link>
+                <Link to='/products/men/all/bestsellers'>Bestsellers</Link>
+              </li>
+              <li>
+                <Link to='/products/men/all/collection'>New Collection</Link>
               </li>
               <li>
                 <Link to='/products/men/top'>Tops</Link>
@@ -96,13 +87,16 @@ function Nav({cartItems}) {
             </ul>
           </li>
           <li className='nav__item'>
-            <Link to='/products/women/all'>Women</Link>
+            <span>Women</span>
             <ul className='nav__item-more'>
-              <li>
+            <li>
                 <Link to='/products/women/all'>All</Link>
               </li>
               <li>
-                <Link to='/products/bestsellers/women'>Bestsellers</Link>
+                <Link to='/products/women/all/bestsellers'>Bestsellers</Link>
+              </li>
+              <li>
+                <Link to='/products/women/all/collection'>New Collection</Link>
               </li>
               <li>
                 <Link to='/products/women/top'>Tops</Link>
@@ -122,25 +116,13 @@ function Nav({cartItems}) {
             </ul>
           </li>
           <li className='nav__item'>
-            <Link to='/products/collection/all'>New Collection</Link>
+            <span>New Collection</span>
             <ul className='nav__item-more'>
             <li>
-                  <Link to='/products/collection/all'>All</Link>
+                  <Link to='/products/men/all/collection'>Men</Link>
                 </li>
                 <li>
-                  <Link to='/products/collection/top'>Tops</Link>
-                </li>
-                <li>
-                  <Link to='/products/collection/bottom'>Bottoms</Link>
-                </li>
-                <li>
-                  <Link to='/products/collection/full-body'>Full Body</Link>
-                </li>
-                <li>
-                  <Link to='/products/collection/shoes'>Shoes</Link>
-                </li>
-                <li>
-                  <Link to='/products/collection/accessories'>Accessories</Link>
+                  <Link to='/products/women/all/collection'>Women</Link>
                 </li>
             </ul>
           </li>
@@ -162,22 +144,10 @@ function Nav({cartItems}) {
               Sale
               <ul className='nav__item-more-mobile'>
               <li>
-                  <Link to='/products/sale/all'>All</Link>
+                  <Link to='/products/men/all/sale'>Men</Link>
                 </li>
                 <li>
-                  <Link to='/products/sale/top'>Tops</Link>
-                </li>
-                <li>
-                  <Link to='/products/sale/bottom'>Bottoms</Link>
-                </li>
-                <li>
-                  <Link to='/products/sale/full-body'>Full Body</Link>
-                </li>
-                <li>
-                  <Link to='/products/sale/shoes'>Shoes</Link>
-                </li>
-                <li>
-                  <Link to='/products/sale/accessories'>Accessories</Link>
+                  <Link to='/products/women/all/sale'>Women</Link>
                 </li>
               </ul>
             </li>
@@ -187,27 +157,30 @@ function Nav({cartItems}) {
             >
               Men
               <ul className='nav__item-more-mobile'>
-                <li>
-                  <Link to='/products/men/all'>All</Link>
-                </li>
-                <li>
-                  <Link to='/products/bestsellers/men'>Bestsellers</Link>
-                </li>
-                <li>
-                  <Link to='/products/men/top'>Tops</Link>
-                </li>
-                <li>
-                  <Link to='/products/men/bottom'>Bottoms</Link>
-                </li>
-                <li>
-                  <Link to='/products/men/full-body'>Full Body</Link>
-                </li>
-                <li>
-                  <Link to='/products/men/shoes'>Shoes</Link>
-                </li>
-                <li>
-                  <Link to='/products/men/accessories'>Accessories</Link>
-                </li>
+              <li>
+                <Link to='/products/men/all'>All</Link>
+              </li>
+              <li>
+                <Link to='/products/men/all/bestsellers'>Bestsellers</Link>
+              </li>
+              <li>
+                <Link to='/products/men/all/collection'>New Collection</Link>
+              </li>
+              <li>
+                <Link to='/products/men/top'>Tops</Link>
+              </li>
+              <li>
+                <Link to='/products/men/bottom'>Bottoms</Link>
+              </li>
+              <li>
+                <Link to='/products/men/full-body'>Full Body</Link>
+              </li>
+              <li>
+                <Link to='/products/men/shoes'>Shoes</Link>
+              </li>
+              <li>
+                <Link to='/products/men/accessories'>Accessories</Link>
+              </li>
               </ul>
             </li>
             <li
@@ -216,27 +189,30 @@ function Nav({cartItems}) {
             >
               Women
               <ul className='nav__item-more-mobile'>
-                <li>
-                  <Link to='/products/women/all'>All</Link>
-                </li>
-                <li>
-                  <Link to='/products/bestsellers/women'>Bestsellers</Link>
-                </li>
-                <li>
-                  <Link to='/products/women/top'>Tops</Link>
-                </li>
-                <li>
-                  <Link to='/products/women/bottom'>Bottoms</Link>
-                </li>
-                <li>
-                  <Link to='/products/women/full-body'>Full Body</Link>
-                </li>
-                <li>
-                  <Link to='/products/women/shoes'>Shoes</Link>
-                </li>
-                <li>
-                  <Link to='/products/women/accessories'>Accessories</Link>
-                </li>
+              <li>
+                <Link to='/products/women/all'>All</Link>
+              </li>
+              <li>
+                <Link to='/products/women/all/bestsellers'>Bestsellers</Link>
+              </li>
+              <li>
+                <Link to='/products/women/all/collection'>New Collection</Link>
+              </li>
+              <li>
+                <Link to='/products/women/top'>Tops</Link>
+              </li>
+              <li>
+                <Link to='/products/women/bottom'>Bottoms</Link>
+              </li>
+              <li>
+                <Link to='/products/women/full-body'>Full Body</Link>
+              </li>
+              <li>
+                <Link to='/products/women/shoes'>Shoes</Link>
+              </li>
+              <li>
+                <Link to='/products/women/accessories'>Accessories</Link>
+              </li>
               </ul>
             </li>
             <li
@@ -246,22 +222,10 @@ function Nav({cartItems}) {
               New Collection
               <ul className='nav__item-more-mobile'>
               <li>
-                  <Link to='/products/collection/all'>All</Link>
+                  <Link to='/products/men/all/collection'>Men</Link>
                 </li>
                 <li>
-                  <Link to='/products/collection/top'>Tops</Link>
-                </li>
-                <li>
-                  <Link to='/products/collection/bottom'>Bottoms</Link>
-                </li>
-                <li>
-                  <Link to='/products/collection/full-body'>Full Body</Link>
-                </li>
-                <li>
-                  <Link to='/products/collection/shoes'>Shoes</Link>
-                </li>
-                <li>
-                  <Link to='/products/collection/accessories'>Accessories</Link>
+                  <Link to='/products/women/all/collection'>Women</Link>
                 </li>
               </ul>
             </li>

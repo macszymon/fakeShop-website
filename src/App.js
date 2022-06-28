@@ -22,7 +22,8 @@ function App() {
       <Nav cartItems={cart.length} />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/products/:category/:type' element={<Products />} />
+        <Route path='/products/:gender/:type' element={<Products />} />
+        <Route path='/products/:gender/:type/:subtype' element={<Products />} />
         <Route path='/product/:id' element={<Details cart={cart} setCart={setCart} favourites={favourites} setFavourites={setFavourites} />} />
         <Route path='/favourites' element={<Favourites favourites={favourites} setFavourites={setFavourites} />} />
         <Route path='/magazine' element={<Magazine/>} />
