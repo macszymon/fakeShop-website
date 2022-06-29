@@ -37,8 +37,11 @@
   transition: all .3s ease-in-out;
 }
 
+.about-us__btn a {
+  color: var(--fonts-secondary);
+}
+
 .about-us__btn:hover {
-  opacity: .9;
   transform: scale(1.1);
 }
 

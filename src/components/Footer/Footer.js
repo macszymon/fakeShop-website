@@ -18,7 +18,7 @@ function Footer() {
         <ul className='footer__list'>
           <li className='footer__item'>Categories</li>
           <li className='footer__item'>
-            <Link to='/products/sale/all'>Sale</Link>
+            <Link to='/products/both/all/sale'>Sale</Link>
           </li>
           <li className='footer__item'>
             <Link to='/products/men/all'>Men</Link>
@@ -27,22 +27,22 @@ function Footer() {
             <Link to='/products/women/all'>Women</Link>
           </li>
           <li className='footer__item'>
-            <Link to='/products/collection/all'>New collection</Link>
+            <Link to='/products/both/all/collection'>New collection</Link>
           </li>
         </ul>
         <ul className='footer__list'>
           <li className='footer__item'>Company</li>
           <li className='footer__item'>
-            <Link to='/about-us' >About us</Link>
+            <Link to='/company/about-us' >About us</Link>
           </li>
           <li className='footer__item'>
             <Link to='/magazine'>Magazine</Link>
           </li>
           <li className='footer__item'>
-            <Link to='/faqs'>FAQs</Link>
+            <Link to='/company/faqs'>FAQs</Link>
           </li>
           <li className='footer__item'>
-            <Link to='/contact'>Contact us</Link>
+            <Link to='/company/contact'>Contact us</Link>
           </li>
           <li className='footer__item'></li>
         </ul>

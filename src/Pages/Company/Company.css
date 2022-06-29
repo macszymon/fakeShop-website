@@ -1,0 +1,83 @@
+.company {
+  margin-inline: auto;
+  margin-top: 8.5625rem;
+  max-width: 1500px;
+  padding: 2em 5em;
+}
+
+.company-about-us__wrapper {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 6rem;
+}
+
+.company__header {
+  color: var(--fonts-primary);
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.company-about-us__img {
+  width: 50%;
+  object-fit: cover;
+}
+
+.company-about-us__desc {
+  width: 50%;
+}
+
+.company-about-us__desc p {
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.company-contact__desc h3 {
+  margin-bottom: 1rem;
+}
+
+.company-contact__desc h4:last-child {
+  margin-bottom: 1rem;
+}
+
+.company-contact__items a {
+  text-decoration: underline;
+}
+
+.company-faq__question {
+  margin-bottom: 3rem;
+}
+
+.company-faq__question h3 {
+  margin-bottom: .6rem;
+}
+
+.company-faq__question p {
+  line-height: 1.5;
+  width: 70%;
+}
+
+@media (max-width: 950px) {
+  .company-about-us__wrapper {
+    flex-direction: column;
+  }
+
+  .company-about-us__wrapper:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+
+  .company-about-us__img {
+    width: 100%;
+    height: 500px;
+  }
+
+  .company-about-us__desc {
+    width: 100%;
+  }
+}
+
+@media (max-width: 650px) {
+  .company {
+    margin-top: 0;
+    padding: 2em;
+  }
+}

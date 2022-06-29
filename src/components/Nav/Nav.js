@@ -47,8 +47,11 @@ function Nav({cartItems}) {
             <Link to='/'>Home</Link>
           </li>
           <li className='nav__item'>
-            <span>Sale</span>
+            <Link to='/products/both/all/sale'>Sale</Link>
             <ul className='nav__item-more'>
+                <li>
+                  <Link to='/products/both/all/sale'>All</Link>
+                </li>
             <li>
                   <Link to='/products/men/all/sale'>Men</Link>
                 </li>
@@ -116,8 +119,11 @@ function Nav({cartItems}) {
             </ul>
           </li>
           <li className='nav__item'>
-            <span>New Collection</span>
+            <Link to='/products/both/all/collection'>New Collection</Link>
             <ul className='nav__item-more'>
+            <li>
+                  <Link to='/products/both/all/collection'>All</Link>
+                </li>
             <li>
                   <Link to='/products/men/all/collection'>Men</Link>
                 </li>
@@ -143,6 +149,9 @@ function Nav({cartItems}) {
             >
               Sale
               <ul className='nav__item-more-mobile'>
+              <li>
+                  <Link to='/products/both/all/sale'>All</Link>
+                </li>
               <li>
                   <Link to='/products/men/all/sale'>Men</Link>
                 </li>
@@ -221,6 +230,9 @@ function Nav({cartItems}) {
             >
               New Collection
               <ul className='nav__item-more-mobile'>
+              <li>
+                  <Link to='/products/both/all/collection'>All</Link>
+                </li>
               <li>
                   <Link to='/products/men/all/collection'>Men</Link>
                 </li>

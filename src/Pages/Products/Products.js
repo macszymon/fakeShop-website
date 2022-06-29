@@ -15,6 +15,14 @@ function Products() {
         filteredData = data.filter(item => item.category === gender && item.type === type)
       } else if (type !== 'all' && subtype==='bestsellers') {
         filteredData = data.filter(item => item.isBestseller === true && item.type === type && item.category === gender)
+      } else if (type !== 'all' && gender === 'both' && subtype==='sale') {
+        filteredData = data.filter(item => item.isOnSale === true && item.type === type)
+      } else if (type === 'all' && gender === 'both' && subtype==='sale') {
+        filteredData = data.filter(item => item.isOnSale === true)
+      } else if (type !== 'all' && gender === 'both' && subtype==='collection') {
+        filteredData = data.filter(item => item.isFromNewCollection === true && item.type === type)
+      } else if (type === 'all' && gender === 'both' && subtype==='collection') {
+        filteredData = data.filter(item => item.isFromNewCollection === true)
       } else if (type === 'all' && subtype==='bestsellers') {
         filteredData = data.filter(item => item.isBestseller === true && item.category === gender)
       } else if (type !== 'all' && subtype==='collection') {

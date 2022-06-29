@@ -10,6 +10,7 @@ import Magazine from './Pages/Magazine/Magazine';
 import Post from './Pages/Magazine/Post';
 import Search from './Pages/Search/Search';
 import Error from './Pages/Error/Error';
+import Company from './Pages/Company/Company';
 import { useState } from 'react';
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
         <Route path='/magazine/post/:id' element={<Post/>} />
         <Route path='/cart' element={<Cart cart={cart} setCart={setCart} />} />
         <Route path='/search/:value' element={<Search/>} />
+        <Route path='/company/:section' element={<Company />} />
         <Route path='*' element={<Error />} />
       </Routes>
       <Footer />
