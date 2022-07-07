@@ -6,7 +6,7 @@ function Cart({ cart, setCart }) {
   let total = 0;
   let discount = 0;
   cart.forEach((item) => (total += item.price * item.quantity));
-  cart.forEach(item => item.discount !== 0 ? discount +=item.price - Math.floor(item.price * (item.discount)) * item.quantity : discount += 0);
+  cart.forEach(item => item.discount !== 0 ? discount += (item.price - Math.floor(item.price * (item.discount))) * item.quantity : discount += 0);
 
   return (
     <main className='cart'>
