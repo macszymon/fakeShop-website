@@ -12,7 +12,7 @@ function BestSelling() {
     <section className="best-selling">
       <div className="best-selling__header">
       <h2 className='best-selling__title'>Bestsellers</h2>
-      <Link to='/products/bestsellers/all' className='collection__btn'>See more</Link>
+      <Link to='/products/both/all/bestsellers' className='collection__btn'>See more</Link>
       </div>
       <div className="collection__cards">
         <Card item={filteredData[2]} />

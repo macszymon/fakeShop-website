@@ -10,7 +10,7 @@ function BigSales() {
       <h3 className='sales__off'>
         40%-50% <span>off</span>
       </h3>
-      <Link to='/products/sale/all' className='sales__btn'>
+      <Link to='/products/both/all/sale' className='sales__btn'>
         Shop now
       </Link>
     </section>

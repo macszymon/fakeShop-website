@@ -14,7 +14,7 @@ function AboutUs() {
           atque. Corrupti a reiciendis distinctio debitis ut.
         </p>
         <button className='about-us__btn' >
-          <Link to='/company/#about-us'>Learn more</Link>
+          <Link to='/company/about-us'>Learn more</Link>
         </button>
       </div>
       <img src={img} alt='women standing' className='about-us__img' />

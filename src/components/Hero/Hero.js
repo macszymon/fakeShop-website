@@ -15,7 +15,7 @@ function Hero() {
           20%-30% <span>off</span>
         </h2>
         <h2 className='hero__subheader'>Shop the new Summer colection</h2>
-        <Link to='/products/collection/all' className='hero__btn'>
+        <Link to='/products/both/all/collection' className='hero__btn'>
           View collection
         </Link>
       </div>
