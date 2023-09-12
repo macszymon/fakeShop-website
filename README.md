@@ -10,7 +10,7 @@ This is a fake e-commerce app. You can add items to cart and favourites, navigat
 
 ## Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://macszymon.github.io/fake-store-app/](https://macszymon.github.io/fake-store-app/)
 
 ## Built with
 
