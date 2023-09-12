@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/fakeShop-website/static/css/main.f5b7d3db.css",
+    "main.js": "/fakeShop-website/static/js/main.9117ddd6.js",
+    "static/media/clark-street-mercantile-P3pI6xzovu0-unsplash.png": "/fakeShop-website/static/media/clark-street-mercantile-P3pI6xzovu0-unsplash.a7b53c85edeb8966656a.png",
+    "static/media/emma-harrisova-QegmyFbXvTw-unsplash.png": "/fakeShop-website/static/media/emma-harrisova-QegmyFbXvTw-unsplash.21cd7509b0258ed9979b.png",
+    "static/media/trent-bradley-xh6_ip3kzo8-unsplash.jpg": "/fakeShop-website/static/media/trent-bradley-xh6_ip3kzo8-unsplash.ed62462e8290893da8ac.jpg",
+    "static/media/photo-1507297448044-a99b358cd06e.jpg": "/fakeShop-website/static/media/photo-1507297448044-a99b358cd06e.b158241e0f2d3d51420d.jpg",
+    "index.html": "/fakeShop-website/index.html",
+    "main.f5b7d3db.css.map": "/fakeShop-website/static/css/main.f5b7d3db.css.map",
+    "main.9117ddd6.js.map": "/fakeShop-website/static/js/main.9117ddd6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f5b7d3db.css",
+    "static/js/main.9117ddd6.js"
+  ]
+}
