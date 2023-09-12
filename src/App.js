@@ -3,7 +3,7 @@ import Footer from './components/Footer/Footer';
 import Home from './Pages/Home';
 import Products from './Pages/Products/Products';
 import Details from './Pages/Details/Details';
-import {HashRouter, Routes, Route } from 'react-router-dom';
+import {Routes, Route } from 'react-router-dom';
 import Favourites from './Pages/Favourites/Favourites';
 import Cart from './Pages/Cart/Cart';
 import Magazine from './Pages/Magazine/Magazine';
@@ -21,7 +21,7 @@ function App() {
     <>
       <div className='open'></div>
       <Nav cartItems={cart.length} />
-      <HashRouter basename='/'>
+      <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/products/:gender/:type' element={<Products />} />
         <Route path='/products/:gender/:type/:subtype' element={<Products />} />
@@ -33,7 +33,7 @@ function App() {
         <Route path='/search/:value' element={<Search/>} />
         <Route path='/company/:section' element={<Company />} />
         <Route path='*' element={<Error />} />
-      </HashRouter>
+      </Routes>
       <Footer />
     </>
   );

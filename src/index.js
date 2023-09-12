@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import { BrowserRouter, useLocation } from 'react-router-dom';
+import {HashRouter, useLocation } from 'react-router-dom';
 
 const ScrollToTop = () => {
   const location = useLocation();
@@ -15,9 +15,9 @@ const ScrollToTop = () => {
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <ScrollToTop />
       <App />
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>
 );
