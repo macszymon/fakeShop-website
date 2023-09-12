@@ -7,7 +7,6 @@ import data from '../../data';
 
 function Products() {
   const [isShownType, setIsShownType] = useState(false);
-  const [isShownPrice, setIsShownPrice] = useState(false);
   let { gender, type, subtype } = useParams();
   let filteredData = [];
 
@@ -67,27 +66,6 @@ function Products() {
   } else {
     filteredData = data.filter((item) => item.category === gender);
   }
-  // if (type !=='all') {
-  //   if(category === 'men' || category === 'women') {
-  //     filteredData = data.filter(item => item.category === category && item.type === type)
-  //   } else if (category === 'collection') {
-  //     filteredData = data.filter(item => item.isFromNewCollection === true && (item.category === type || item.type === type))
-  //   } else if (category === 'sale') {
-  //     filteredData = data.filter(item => item.isOnSale === true && (item.type === type || item.category === type))
-  //   } else if (category === 'bestsellers') {
-  //     filteredData = data.filter(item => item.isBestseller === true && (item.type === type || item.category === type))
-  //   }
-  // } else {
-  //   if(category === 'men' || category === 'women') {
-  //     filteredData = data.filter(item => item.category === category)
-  //   } else if (category === 'collection') {
-  //     filteredData = data.filter(item => item.isFromNewCollection === true)
-  //   } else if (category === 'sale') {
-  //     filteredData = data.filter(item => item.isOnSale === true)
-  //   } else if (category === 'bestsellers') {
-  //     filteredData = data.filter(item => item.isBestseller === true)
-  //   }
-  // }
   return (
     <main className='products'>
       <div className='products__header'>

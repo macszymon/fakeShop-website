@@ -15,7 +15,7 @@ function Details({favourites, setFavourites,cart, setCart}) {
 
   useEffect(() => {
     favourites.forEach(item => item.id === product.id && setIsFav(true))
-  },[])
+  }, [])
   
   useEffect(() => {
     localStorage.setItem('fav', JSON.stringify(favourites))
@@ -54,7 +54,7 @@ function Details({favourites, setFavourites,cart, setCart}) {
     <main className='details'>
       <img src={product.img} alt="" className="details__img" />
       <div className="details__text">
-        <h2 className='details__title'>{product.name} {!isFav ? <AiOutlineHeart size={32} onClick={addFav}/> : <AiFillHeart size={32} style={{fill: '#C9002E'}} onClick={removeFav}/>}</h2>
+        <h2 className='details__title'>{product.name} {!isFav ? <AiOutlineHeart className='icon' size={32} onClick={addFav}/> : <AiFillHeart className='icon' size={32} style={{fill: '#C9002E'}} onClick={removeFav}/>}</h2>
           <div className='details__rating'>
             <AiOutlineStar className='details__star' />
             <h4>

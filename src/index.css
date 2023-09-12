@@ -59,6 +59,15 @@ h4,h5,h6,p {
   font-weight: 300;
 }
 
+.icon {
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
+
 @keyframes pageLoad {
   0% {
     height: 100vh;

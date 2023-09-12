@@ -14,7 +14,7 @@ function Company() {
       <div className="company-about-us">
         <h2 className="company__header">About Us</h2>
         <div className="company-about-us__wrapper">
-          <img className="company-about-us__img" src={img1} />
+          <img className="company-about-us__img" src={img1} alt='' />
           <div className="company-about-us__desc">
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos pariatur laudantium, eligendi, nihil explicabo optio incidunt maiores dolorum at facere tempora et facilis minima ut ullam voluptatem magnam eius cumque modi nam est, iste voluptatibus consectetur. Id ex aliquam illum atque sequi, ratione unde! Adipisci saepe minima assumenda aliquam cumque.</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, eaque cumque beatae vitae qui accusamus delectus facere asperiores consequuntur et architecto, facilis, perspiciatis natus aliquid aspernatur cupiditate? Iusto autem nemo quae accusamus dignissimos? Doloribus iure dolores quidem aliquid debitis harum quia fugiat libero adipisci corporis nulla rerum eos iusto nesciunt, alias cum magni deleniti ducimus dolorem doloremque, sunt similique. Temporibus ipsam quia dolorum aliquam alias non labore perspiciatis eius fugit dolor praesentium esse sunt iusto, quo blanditiis distinctio! Sit, laboriosam quo. Consequatur quos doloribus rerum nostrum in nemo culpa eos mollitia, adipisci magni similique? Hic soluta odit fuga sunt cupiditate?</p>
@@ -26,7 +26,7 @@ function Company() {
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos pariatur laudantium, eligendi, nihil explicabo optio incidunt maiores dolorum at facere tempora et facilis minima ut ullam voluptatem magnam eius cumque modi nam est, iste voluptatibus consectetur. Id ex aliquam illum atque sequi, ratione unde! Adipisci saepe minima assumenda aliquam cumque.</p>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora pariatur deleniti impedit ipsa totam, officiis repellendus dolorum aut eligendi odit numquam accusantium, enim beatae sed nisi eius dicta quas minima mollitia? Neque reiciendis dolore minima odio animi magni beatae enim perspiciatis amet natus, suscipit, omnis tempora tenetur, voluptas voluptate! Voluptate tempore similique neque quisquam recusandae nihil ullam necessitatibus nesciunt incidunt velit? Deleniti iusto deserunt architecto nesciunt expedita, delectus odio inventore facere nobis, suscipit ipsam aut accusamus? Non maxime excepturi fugit velit iste consequuntur tenetur reiciendis voluptatibus quo mollitia quasi beatae voluptate laboriosam dignissimos, sequi commodi veniam praesentium iusto dolore sint temporibus animi aspernatur illum veritatis. Quo temporibus libero molestiae voluptatibus sed! Provident consectetur, repudiandae enim ipsum earum nulla, dicta hic in, aliquam optio placeat veniam officia ratione vitae itaque harum beatae consequuntur. Beatae provident ipsum facere numquam, corporis optio doloremque vel. In quidem earum eveniet unde assumenda sequi numquam facere?</p>
           </div>
-          <img className="company-about-us__img" src={img2} />
+          <img className="company-about-us__img" src={img2} alt='' />
     </div>
       </div>
       }
@@ -71,9 +71,9 @@ function Company() {
           </div>
           <h3>Chat with us on social media</h3>
           <div className='company-contact__items'>
-          <h4><a href='https://www.facebook.com/' target='_blank'>Facebook</a></h4>
-          <h4><a href='https://www.instagram.com/' target='_blank'>Instagram</a></h4>
-          <h4><a href='https://twitter.com/' target='_blank'>Twitter</a></h4>
+          <h4><a href='https://www.facebook.com/' target='_blank' rel="noreferrer">Facebook</a></h4>
+          <h4><a href='https://www.instagram.com/' target='_blank' rel="noreferrer">Instagram</a></h4>
+          <h4><a href='https://twitter.com/' target='_blank' rel="noreferrer">Twitter</a></h4>
           </div>
         </div>
       </div>

@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 function Hero() {
   return (
     <section className='hero'>
-      <img className='hero__img' src={img2} />
+      <img className='hero__img' src={img2} alt='' />
       <div className='hero__text'>
         <h1 className='hero__header'>
           Clothes for people who love quality and premium products

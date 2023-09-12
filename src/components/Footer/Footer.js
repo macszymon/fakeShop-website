@@ -50,22 +50,22 @@ function Footer() {
           <li className='footer__item'>Socials</li>
           <ul className='footer__list--socials'>
             <li className='footer__item'>
-              <a href='https://www.facebook.com/' target='_blank'>
+              <a href='https://www.facebook.com/' target='_blank' rel="noreferrer">
                 <BsFacebook size={24} />
               </a>
             </li>
             <li className='footer__item'>
-              <a href='https://www.instagram.com/' target='_blank'>
+              <a href='https://www.instagram.com/' target='_blank' rel="noreferrer">
                 <BsInstagram size={24} />
               </a>
             </li>
             <li className='footer__item'>
-              <a href='https://twitter.com/' target='_blank'>
+              <a href='https://twitter.com/' target='_blank' rel="noreferrer">
                 <BsTwitter size={24} />
               </a>
             </li>
             <li className='footer__item'>
-              <a href='https://pinterest.com' target='_blank'>
+              <a href='https://pinterest.com' target='_blank' rel="noreferrer">
                 <BsPinterest size={24} />
               </a>
             </li>

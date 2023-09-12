@@ -4,7 +4,7 @@ import {AiOutlineDelete} from 'react-icons/ai'
 
 function CartCard({cart, item, setCart}) {
   function deleteItem() {
-    let newCart = cart.filter(el => el != item)
+    let newCart = cart.filter(el => el !== item)
     setCart(newCart)
     localStorage.setItem('cart', JSON.stringify(newCart))
   }
@@ -12,12 +12,12 @@ function CartCard({cart, item, setCart}) {
   return (
     <div className='cart-card'>
       <Link to={'/product/' + item.id}>
-      <img className='cart-card__img' src={item.img} />
+      <img className='cart-card__img' src={item.img} alt='' />
       </Link>
       <div className='cart-card__text'>
         <h3 className='cart-card__title'>
           {item.name}
-          <AiOutlineDelete size={24} onClick={deleteItem}/>
+          <AiOutlineDelete className='icon' size={24} onClick={deleteItem}/>
         </h3>
         {item.discount > 0 ? (
           <h3 className='cart-card__price-new cart-card__sale'>

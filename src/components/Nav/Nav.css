@@ -47,7 +47,6 @@
 }
 
 .nav__icons {
-  align-items: center;
   display: flex;
   gap: 1rem;
   justify-content: flex-end;
@@ -177,6 +176,7 @@
 }
 
 .nav__hamburger {
+  cursor: pointer;
   display: none;
 }
 
