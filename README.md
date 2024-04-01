@@ -20,7 +20,6 @@ Project is created with:
 * React Router
 
 ## Sources
-* All images from - [Unsplash](https://unsplash.com/) 
 * All icons from - [React Icons](https://react-icons.github.io/react-icons/)
  
 ## Setup
