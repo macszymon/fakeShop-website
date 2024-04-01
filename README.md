@@ -1,11 +1,31 @@
-# FAKESHOP APP
-This is a fake e-commerce app. You can add items to cart and favourites, navigate through pages. Website is fully mobile responsive. Data for this app is made by me.
+# FakeShop
 
-## Live Site URL:
-- [https://macszymon.github.io/fakeShop-website/](https://macszymon.github.io/fakeShop-website/)
+## General info
+This project is a simple website for a fake e-commerce company. I made it to pracise React and learn how to implement shopping-cart and favorites features.
+### Features
+* Adding items to cart,
+* Adding items to favorites,
+* Searching for a specific item,
+* Browsing items by categories,
+* Fully mobile responsive.
 
-## Built using:
-- [React](https://reactjs.org/)
+## Website url:
+[https://macszymon.github.io/fakeShop-website/](https://macszymon.github.io/fakeShop-website/)
+ 
+## Technologies
+Project is created with:
+* HTML5
+* CSS
+* React
+* React Router
 
-## Resources
-- All images used in this project are from - [Unsplash](https://unsplash.com/) 
+## Sources
+* All images from - [Unsplash](https://unsplash.com/) 
+* All icons from - [React Icons](https://react-icons.github.io/react-icons/)
+ 
+## Setup
+To run this project, install it locally using npm:
+```
+$ npm install
+$ npm start
+```
